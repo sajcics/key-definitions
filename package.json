@@ -1,0 +1,17 @@
+{
+  "name": "keys",
+  "version": "0.0.1",
+  "description": "get a keyboard key definitions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "SimpleApproach",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
