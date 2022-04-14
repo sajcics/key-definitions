@@ -1,235 +1,209 @@
-import { KeyInterface, KeyDefaults, KEY } from '../types';
+import { KeyInterface, KeyDefaults, CODES } from '../types';
 
 const CHAR_A: KeyInterface = {
-    key: "a",
-    keyCode: 65,
-    which: 65,
-    code: `${KEY}A`,
+    keyCode: 97,
+    which: 97,
+    code: `${CODES.KEY}A`,
     name: "a",
     ...KeyDefaults
 }
 
 const CHAR_B: KeyInterface = {
-    key: "b",
-    keyCode: 66,
-    which: 66,
-    code: `${KEY}B`,
+    keyCode: 98,
+    which: 98,
+    code: `${CODES.KEY}B`,
     name: "b",
     ...KeyDefaults
 }
 
 const CHAR_C: KeyInterface = {
-    key: "c",
-    keyCode: 67,
-    which: 67,
-    code: `${KEY}C`,
+    keyCode: 99,
+    which: 99,
+    code: `${CODES.KEY}C`,
     name: "c",
     ...KeyDefaults
 }
 
 const CHAR_D: KeyInterface = {
-    key: "d",
-    keyCode: 68,
-    which: 68,
-    code: `${KEY}D`,
+    keyCode: 100,
+    which: 100,
+    code: `${CODES.KEY}D`,
     name: "d",
     ...KeyDefaults
 }
 
 const CHAR_E: KeyInterface = {
-    key: "e",
-    keyCode: 69,
-    which: 69,
-    code: `${KEY}E`,
+    keyCode: 101,
+    which: 101,
+    code: `${CODES.KEY}E`,
     name: "e",
     ...KeyDefaults
 }
 
 const CHAR_F: KeyInterface = {
-    key: "f",
-    keyCode: 70,
-    which: 70,
-    code: `${KEY}F`,
+    keyCode: 102,
+    which: 102,
+    code: `${CODES.KEY}F`,
     name: "f",
     ...KeyDefaults
 }
 
 const CHAR_G: KeyInterface = {
-    key: "G",
-    keyCode: 71,
-    which: 71,
-    code: `${KEY}G`,
+    keyCode: 103,
+    which: 103,
+    code: `${CODES.KEY}G`,
     name: "g",
     ...KeyDefaults
 }
 
 const CHAR_H: KeyInterface = {
-    key: "H",
-    keyCode: 72,
-    which: 72,
-    code: `${KEY}H`,
+    keyCode: 104,
+    which: 104,
+    code: `${CODES.KEY}H`,
     name: "h",
     ...KeyDefaults
 }
 
 const CHAR_I: KeyInterface = {
-    key: "I",
-    keyCode: 73,
-    which: 73,
-    code: `${KEY}I`,
+    keyCode: 105,
+    which: 105,
+    code: `${CODES.KEY}I`,
     name: "i",
     ...KeyDefaults
 }
 
 const CHAR_J: KeyInterface = {
-    key: "j",
-    keyCode: 74,
-    which: 74,
-    code: `${KEY}J`,
+    keyCode: 106,
+    which: 106,
+    code: `${CODES.KEY}J`,
     name: "j",
     ...KeyDefaults
 }
 
 const CHAR_K: KeyInterface = {
-    key: "k",
-    keyCode: 75,
-    which: 75,
-    code: `${KEY}K`,
-    name: "5",
+    keyCode: 107,
+    which: 107,
+    code: `${CODES.KEY}K`,
+    name: "k",
     ...KeyDefaults
 }
 
 const CHAR_L: KeyInterface = {
-    key: "l",
-    keyCode: 76,
-    which: 76,
-    code: `${KEY}L`,
+    keyCode: 108,
+    which: 108,
+    code: `${CODES.KEY}L`,
     name: "l",
     ...KeyDefaults
 }
 
 const CHAR_M: KeyInterface = {
-    key: "M",
-    keyCode: 77,
-    which: 77,
-    code: `${KEY}M`,
+    keyCode: 109,
+    which: 109,
+    code: `${CODES.KEY}M`,
     name: "m",
     ...KeyDefaults
 }
 
 const CHAR_N: KeyInterface = {
-    key: "n",
-    keyCode: 78,
-    which: 78,
-    code: `${KEY}N`,
+    keyCode: 110,
+    which: 110,
+    code: `${CODES.KEY}N`,
     name: "n",
     ...KeyDefaults
 }
 
 const CHAR_O: KeyInterface = {
-    key: "o",
-    keyCode: 79,
-    which: 79,
-    code: `${KEY}O`,
+    keyCode: 111,
+    which: 111,
+    code: `${CODES.KEY}O`,
     name: "o",
     ...KeyDefaults
 }
 
 const CHAR_P: KeyInterface = {
-    key: "p",
-    keyCode: 80,
-    which: 80,
-    code: `${KEY}P`,
+    keyCode: 112,
+    which: 112,
+    code: `${CODES.KEY}P`,
     name: "p",
     ...KeyDefaults
 }
 
 const CHAR_Q: KeyInterface = {
-    key: "q",
-    keyCode: 81,
-    which: 81,
-    code: `${KEY}Q`,
+    keyCode: 113,
+    which: 113,
+    code: `${CODES.KEY}Q`,
     name: "q",
     ...KeyDefaults
 }
 
 const CHAR_R: KeyInterface = {
-    key: "r",
-    keyCode: 82,
-    which: 82,
-    code: `${KEY}R`,
+    keyCode: 114,
+    which: 114,
+    code: `${CODES.KEY}R`,
     name: "r",
     ...KeyDefaults
 }
 
 const CHAR_S: KeyInterface = {
-    key: "s",
-    keyCode: 83,
-    which: 83,
-    code: `${KEY}S`,
+    keyCode: 115,
+    which: 115,
+    code: `${CODES.KEY}S`,
     name: "s",
     ...KeyDefaults
 }
 
 const CHAR_T: KeyInterface = {
-    key: "t",
-    keyCode: 84,
-    which: 84,
-    code: `${KEY}T`,
+    keyCode: 116,
+    which: 116,
+    code: `${CODES.KEY}T`,
     name: "t",
     ...KeyDefaults
 }
 
 const CHAR_U: KeyInterface = {
-    key: "u",
-    keyCode: 85,
-    which: 85,
-    code: `${KEY}U`,
+    keyCode: 117,
+    which: 117,
+    code: `${CODES.KEY}U`,
     name: "u",
     ...KeyDefaults
 }
 
 const CHAR_V: KeyInterface = {
-    key: "v",
-    keyCode: 86,
-    which: 86,
-    code: `${KEY}V`,
+    keyCode: 118,
+    which: 118,
+    code: `${CODES.KEY}V`,
     name: "v",
     ...KeyDefaults
 }
 
 const CHAR_W: KeyInterface = {
-    key: "w",
-    keyCode: 87,
-    which: 87,
-    code: `${KEY}W`,
+    keyCode: 119,
+    which: 119,
+    code: `${CODES.KEY}W`,
     name: "w",
     ...KeyDefaults
 }
 
 const CHAR_X: KeyInterface = {
-    key: "x",
-    keyCode: 88,
-    which: 88,
-    code: `${KEY}X`,
+    keyCode: 120,
+    which: 120,
+    code: `${CODES.KEY}X`,
     name: "x",
     ...KeyDefaults
 }
 
 const CHAR_Y: KeyInterface = {
-    key: "y",
-    keyCode: 89,
-    which: 89,
-    code: `${KEY}Y`,
+    keyCode: 121,
+    which: 121,
+    code: `${CODES.KEY}Y`,
     name: "y",
     ...KeyDefaults
 }
 
 const CHAR_Z: KeyInterface = {
-    key: "z",
-    keyCode: 90,
-    which: 90,
-    code: `${KEY}Z`,
+    keyCode: 122,
+    which: 122,
+    code: `${CODES.KEY}Z`,
     name: "z",
     ...KeyDefaults
 }

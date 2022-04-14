@@ -1,5 +1,4 @@
 export interface KeyInterface {
-    key: number|string,
     keyCode: number,
     which: number,
     code: string,
@@ -13,19 +12,44 @@ export const KeyDefaults = {
     isMetaKey: false
 }
 
-export const NUMPAD =  "Numpad";
-export const DIGIT = "Digit";
-export const KEY = "Key";
-export const ESCAPE = "Escape";
-export const TAB = "Tab";
-export const CAPS_LOCK = "CapsLock";
-export const SHIFT = "Shift";
-export const SHIFT_LEFT = SHIFT+"Left";
-export const SHIFT_RIGHT = SHIFT+"Right";
-export const CONTROL = "Control";
-export const CONTROL_LEFT = CONTROL+"Left";
-export const CONTROL_RIGHT = CONTROL+"Right";
-export const ALT = "Alt";
-export const ALT_LEFT = ALT+"Left";
-export const ALT_RIGHT = ALT+"Right";
-export const SPACE = "Space";
+export enum CODES {
+    NUMPAD = "Numpad",
+    DIGIT = "Digit",
+    FUNCTION = "F",
+    KEY = "Key",
+    ESCAPE = "Escape",
+    TAB = "Tab",
+    CAPS_LOCK = "CapsLock",
+    SHIFT = "Shift",
+    SHIFT_LEFT = "ShiftLeft",
+    SHIFT_RIGHT = "ShiftRight",
+    CONTROL = "Control",
+    CONTROL_LEFT = "ControlLeft",
+    CONTROL_RIGHT = "ControlRight",
+    ALT = "Alt",
+    ALT_LEFT = "AltLeft",
+    ALT_RIGHT = "AltRight",
+    SPACE = "Space",
+    SPECIAL = "Special",
+    ENTER = "Enter",
+    PAGE_UP = "Page Up",
+    PAGE_DOWN = "Page Down",
+    END = "End",
+    HOME = "Home",
+    LEFT_ARROW = "ArrowLeft",
+    UP_ARROW = "ArrowUp",
+    RIGHT_ARROW = "ArrowRight",
+    DOWN_ARROW = "ArrowDown",
+    PRINT_SCREEN = "PrintScreen",
+    INSERT = "Insert",
+    DELETE = "Delete",
+    NUM_LOCK = "NumLock",
+    SCROLL_LOCK = "ScrollLock",
+}
+
+
+
+
+
+
+

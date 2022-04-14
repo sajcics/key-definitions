@@ -1,85 +1,76 @@
-import {KeyDefaults, NUMPAD, KeyInterface} from "../types"
+import { KeyDefaults, CODES, KeyInterface } from "../types"
 
-const ONE:KeyInterface = {
-    key: 1,
+const ONE: KeyInterface = {
     keyCode: 97,
     which: 97,
-    code: `${NUMPAD}1`,
+    code: `${CODES.NUMPAD}1`,
     name: "One",
     ...KeyDefaults
 }
 
-const TWO:KeyInterface = {
-    key: 2,
+const TWO: KeyInterface = {
     keyCode: 98,
     which: 98,
-    code: `${NUMPAD}2`,
+    code: `${CODES.NUMPAD}2`,
     name: "Two",
     ...KeyDefaults
 }
 
-const THREE:KeyInterface = {
-    key: 3,
+const THREE: KeyInterface = {
     keyCode: 99,
     which: 99,
-    code: `${NUMPAD}3`,
+    code: `${CODES.NUMPAD}3`,
     name: "Three",
     ...KeyDefaults
 }
 
-const FOUR:KeyInterface = {
-    key: 4,
+const FOUR: KeyInterface = {
     keyCode: 100,
     which: 100,
-    code: `${NUMPAD}4`,
+    code: `${CODES.NUMPAD}4`,
     name: "Four",
     ...KeyDefaults
 }
 
-const FIVE:KeyInterface = {
-    key: 5,
+const FIVE: KeyInterface = {
     keyCode: 101,
     which: 101,
-    code: `${NUMPAD}5`,
+    code: `${CODES.NUMPAD}5`,
     name: "Five",
     ...KeyDefaults
 }
 
-const SIX:KeyInterface = {
-    key: 6,
+const SIX: KeyInterface = {
     keyCode: 102,
     which: 102,
-    code: `${NUMPAD}6`,
+    code: `${CODES.NUMPAD}6`,
     name: "Six",
     ...KeyDefaults
 }
 
 
-const SEVEN:KeyInterface = {
-    key: 7,
+const SEVEN: KeyInterface = {
     keyCode: 103,
     which: 103,
-    code: `${NUMPAD}7`,
+    code: `${CODES.NUMPAD}7`,
     name: "Seven",
     ...KeyDefaults
 }
 
 
-const EIGHT:KeyInterface = {
-    key: 8,
+const EIGHT: KeyInterface = {
     keyCode: 104,
     which: 104,
-    code: `${NUMPAD}8`,
+    code: `${CODES.NUMPAD}8`,
     name: "Eight",
     ...KeyDefaults
 }
 
 
-const NINE:KeyInterface = {
-    key: 9,
+const NINE: KeyInterface = {
     keyCode: 105,
     which: 105,
-    code: `${NUMPAD}9`,
+    code: `${CODES.NUMPAD}9`,
     name: "Nine",
     ...KeyDefaults
 }
