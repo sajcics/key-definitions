@@ -94,6 +94,7 @@ const GENERAL_ALT: KeyInterface = {
 const GENERAL_ALT_LEFT: KeyInterface = {
     key: ALT,
     keyCode: 18,
+    
     which: 18,
     code: ALT_LEFT,
     name: "alt left",
