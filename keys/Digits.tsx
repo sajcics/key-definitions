@@ -1,5 +1,13 @@
 import { KeyInterface, KeyDefaults, CODES } from "../types"
 
+const ZERO: KeyInterface = {
+    keyCode: 48,
+    which: 48,
+    code: `${CODES.DIGIT}0`,
+    name: "Zero",
+    ...KeyDefaults
+}
+
 const ONE: KeyInterface = {
     keyCode: 49,
     which: 49,

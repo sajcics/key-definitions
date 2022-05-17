@@ -4,12 +4,16 @@ export interface KeyInterface {
     code: string,
     name: string,
     isAltKey?: boolean,
-    isMetaKey: boolean,
+    isMetaKey?: boolean,
+    isShiftKey?: boolean,
+    isCtrlKey?: boolean
 }
 
 export const KeyDefaults = {
     isAltKey: false,
-    isMetaKey: false
+    isMetaKey: false,
+    isShiftKey: false,
+    isCtrlKey: false
 }
 
 export enum CODES {
@@ -30,7 +34,6 @@ export enum CODES {
     ALT_LEFT = "AltLeft",
     ALT_RIGHT = "AltRight",
     SPACE = "Space",
-    SPECIAL = "Special",
     ENTER = "Enter",
     PAGE_UP = "Page Up",
     PAGE_DOWN = "Page Down",
@@ -45,6 +48,18 @@ export enum CODES {
     DELETE = "Delete",
     NUM_LOCK = "NumLock",
     SCROLL_LOCK = "ScrollLock",
+    EQUAL = "Equal",
+    HELP = "Help",
+    PERIOD = "Period",
+    QUOTE = "Quote",
+    SEMICOLON = "Semicolon",
+    SLASH = "Slash",
+    COMMA = "Comma",
+    MINUS = "Minus",
+    BACKSLASH = "Backslash",
+    BRACKET_LEFT = "BracketLeft",
+    BRACKET_RIGHT = "BracketRight",
+    BACKQUOTE = "Backquote"
 }
 
 

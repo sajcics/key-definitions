@@ -1,10 +1,19 @@
-import { KeyDefaults, CODES, KeyInterface } from "../types"
+import { KeyDefaults, CODES, KeyInterface } from "../../types"
 
 const ENTER: KeyInterface = {
     keyCode: 97,
     which: 97,
     code: `${CODES.NUMPAD}Enter`,
     name: CODES.ENTER,
+    ...KeyDefaults
+}
+
+/** @check */
+const EQUAL: KeyInterface = {
+    keyCode: undefined,
+    which: undefined,
+    code: `${CODES.NUMPAD}${CODES.EQUAL}`,
+    name: "=",
     ...KeyDefaults
 }
 
@@ -39,6 +48,16 @@ const DOWN_ARROW: KeyInterface = {
     name: CODES.DOWN_ARROW,
     ...KeyDefaults,
 };
+
+/** @check */
+const BACKSPACE: KeyInterface = {
+    keyCode: undefined,
+    which: undefined,
+    code: `${CODES.NUMPAD}Backspace`,
+    name: "",
+    ...KeyDefaults,
+};
+
 
 export {
     ENTER,

@@ -5,7 +5,7 @@ import {
 } from "../types";
 
 
-const GENERAL_TAB: KeyInterface = {
+const TAB: KeyInterface = {
     keyCode: 9,
     which: 9,
     code: CODES.TAB,
@@ -14,7 +14,7 @@ const GENERAL_TAB: KeyInterface = {
 };
 
 
-const GENERAL_ENTER: KeyInterface = {
+const ENTER: KeyInterface = {
     keyCode: 13,
     which: 13,
     code: CODES.ENTER,
@@ -23,7 +23,7 @@ const GENERAL_ENTER: KeyInterface = {
 };
 
 
-const GENERAL_SHIFT_LEFT: KeyInterface = {
+const SHIFT_LEFT: KeyInterface = {
     keyCode: 16,
     which: 16,
     code: CODES.SHIFT_LEFT,
@@ -31,7 +31,7 @@ const GENERAL_SHIFT_LEFT: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_SHIFT_RIGHT: KeyInterface = {
+const SHIFT_RIGHT: KeyInterface = {
     keyCode: 16,
     which: 16,
     code: CODES.SHIFT_RIGHT,
@@ -39,7 +39,7 @@ const GENERAL_SHIFT_RIGHT: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_CTRL_LEFT: KeyInterface = {
+const CTRL_LEFT: KeyInterface = {
     keyCode: 17,
     which: 17,
     code: CODES.CONTROL_LEFT,
@@ -47,7 +47,7 @@ const GENERAL_CTRL_LEFT: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_CTRL_RIGHT: KeyInterface = {
+const CTRL_RIGHT: KeyInterface = {
     keyCode: 17,
     which: 17,
     code: CODES.CONTROL_RIGHT,
@@ -55,7 +55,7 @@ const GENERAL_CTRL_RIGHT: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_ALT_LEFT: KeyInterface = {
+const ALT_LEFT: KeyInterface = {
     keyCode: 18,
     which: 18,
     code: CODES.ALT_LEFT,
@@ -63,7 +63,7 @@ const GENERAL_ALT_LEFT: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_ALT_RIGHT: KeyInterface = {
+const ALT_RIGHT: KeyInterface = {
     keyCode: 18,
     which: 18,
     code: CODES.ALT_RIGHT,
@@ -71,7 +71,7 @@ const GENERAL_ALT_RIGHT: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_CAPS_LOCK: KeyInterface = {
+const CAPS_LOCK: KeyInterface = {
     keyCode: 20,
     which: 20,
     code: CODES.CAPS_LOCK,
@@ -79,7 +79,7 @@ const GENERAL_CAPS_LOCK: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_ESC: KeyInterface = {
+const ESC: KeyInterface = {
     keyCode: 27,
     which: 27,
     code: CODES.ESCAPE,
@@ -88,7 +88,7 @@ const GENERAL_ESC: KeyInterface = {
 };
 
 
-const GENERAL_SPACE: KeyInterface = {
+const SPACE: KeyInterface = {
     keyCode: 32,
     which: 32,
     code: CODES.SPACE,
@@ -96,7 +96,7 @@ const GENERAL_SPACE: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_PAGE_UP: KeyInterface = {
+const PAGE_UP: KeyInterface = {
     keyCode: 33,
     which: 33,
     code: CODES.PAGE_UP,
@@ -104,7 +104,7 @@ const GENERAL_PAGE_UP: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_PAGE_DOWN: KeyInterface = {
+const PAGE_DOWN: KeyInterface = {
     keyCode: 34,
     which: 34,
     code: CODES.PAGE_DOWN,
@@ -112,7 +112,7 @@ const GENERAL_PAGE_DOWN: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_END: KeyInterface = {
+const END: KeyInterface = {
     keyCode: 35,
     which: 35,
     code: CODES.END,
@@ -120,7 +120,7 @@ const GENERAL_END: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_HOME: KeyInterface = {
+const HOME: KeyInterface = {
     keyCode: 36,
     which: 36,
     code: CODES.HOME,
@@ -128,7 +128,7 @@ const GENERAL_HOME: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_LEFT_ARROW: KeyInterface = {
+const LEFT_ARROW: KeyInterface = {
     keyCode: 37,
     which: 37,
     code: CODES.LEFT_ARROW,
@@ -136,7 +136,7 @@ const GENERAL_LEFT_ARROW: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_UP_ARROW: KeyInterface = {
+const UP_ARROW: KeyInterface = {
     keyCode: 38,
     which: 38,
     code: CODES.UP_ARROW,
@@ -144,7 +144,7 @@ const GENERAL_UP_ARROW: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_RIGHT_ARROW: KeyInterface = {
+const RIGHT_ARROW: KeyInterface = {
     keyCode: 39,
     which: 39,
     code: CODES.RIGHT_ARROW,
@@ -152,7 +152,7 @@ const GENERAL_RIGHT_ARROW: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_DOWN_ARROW: KeyInterface = {
+const DOWN_ARROW: KeyInterface = {
     keyCode: 40,
     which: 40,
     code: CODES.DOWN_ARROW,
@@ -160,7 +160,7 @@ const GENERAL_DOWN_ARROW: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_PRINT_SCREEN: KeyInterface = {
+const PRINT_SCREEN: KeyInterface = {
     keyCode: 44,
     which: 44,
     code: CODES.PRINT_SCREEN,
@@ -168,7 +168,7 @@ const GENERAL_PRINT_SCREEN: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_INSERT: KeyInterface = {
+const INSERT: KeyInterface = {
     keyCode: 45,
     which: 45,
     code: CODES.INSERT,
@@ -176,7 +176,7 @@ const GENERAL_INSERT: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_DELETE: KeyInterface = {
+const DELETE: KeyInterface = {
     keyCode: 46,
     which: 46,
     code: CODES.DELETE,
@@ -184,7 +184,7 @@ const GENERAL_DELETE: KeyInterface = {
     ...KeyDefaults,
 };
 
-const GENERAL_NUM_LOCK: KeyInterface = {
+const NUM_LOCK: KeyInterface = {
     keyCode: 144,
     which: 114,
     code: CODES.NUM_LOCK,
@@ -192,7 +192,7 @@ const GENERAL_NUM_LOCK: KeyInterface = {
     ...KeyDefaults
 }
 
-const GENERAL_SCROLL_LOCK: KeyInterface = {
+const SCROLL_LOCK: KeyInterface = {
     keyCode: 145,
     which: 145,
     code: CODES.SCROLL_LOCK,
@@ -200,29 +200,37 @@ const GENERAL_SCROLL_LOCK: KeyInterface = {
     ...KeyDefaults
 }
 
+const HELP: KeyInterface = {
+    keyCode: undefined,
+    which: undefined,
+    code: CODES.HELP,
+    name: CODES.HELP,
+    ...KeyDefaults
+}
+
 export {
-    GENERAL_ESC,
-    GENERAL_ENTER,
-    GENERAL_TAB,
-    GENERAL_CAPS_LOCK,
-    GENERAL_SHIFT_LEFT,
-    GENERAL_SHIFT_RIGHT,
-    GENERAL_CTRL_LEFT,
-    GENERAL_CTRL_RIGHT,
-    GENERAL_ALT_LEFT,
-    GENERAL_ALT_RIGHT,
-    GENERAL_SPACE,
-    GENERAL_PAGE_UP,
-    GENERAL_PAGE_DOWN,
-    GENERAL_END,
-    GENERAL_HOME,
-    GENERAL_LEFT_ARROW,
-    GENERAL_RIGHT_ARROW,
-    GENERAL_UP_ARROW,
-    GENERAL_DOWN_ARROW,
-    GENERAL_PRINT_SCREEN,
-    GENERAL_INSERT,
-    GENERAL_DELETE,
-    GENERAL_NUM_LOCK,
-    GENERAL_SCROLL_LOCK
+    ESC,
+    ENTER,
+    TAB,
+    CAPS_LOCK,
+    SHIFT_LEFT,
+    SHIFT_RIGHT,
+    CTRL_LEFT,
+    CTRL_RIGHT,
+    ALT_LEFT,
+    ALT_RIGHT,
+    SPACE,
+    PAGE_UP,
+    PAGE_DOWN,
+    END,
+    HOME,
+    LEFT_ARROW,
+    RIGHT_ARROW,
+    UP_ARROW,
+    DOWN_ARROW,
+    PRINT_SCREEN,
+    INSERT,
+    DELETE,
+    NUM_LOCK,
+    SCROLL_LOCK
 };

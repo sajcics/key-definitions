@@ -1,6 +1,6 @@
-import { KeyInterface, KeyDefaults, CODES } from '../types';
+import { KeyInterface, KeyDefaults, CODES } from '../../types';
 
-const CHAR_A: KeyInterface = {
+const A: KeyInterface = {
     keyCode: 97,
     which: 97,
     code: `${CODES.KEY}A`,
@@ -8,7 +8,7 @@ const CHAR_A: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_B: KeyInterface = {
+const B: KeyInterface = {
     keyCode: 98,
     which: 98,
     code: `${CODES.KEY}B`,
@@ -16,7 +16,7 @@ const CHAR_B: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_C: KeyInterface = {
+const C: KeyInterface = {
     keyCode: 99,
     which: 99,
     code: `${CODES.KEY}C`,
@@ -24,7 +24,7 @@ const CHAR_C: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_D: KeyInterface = {
+const D: KeyInterface = {
     keyCode: 100,
     which: 100,
     code: `${CODES.KEY}D`,
@@ -32,7 +32,7 @@ const CHAR_D: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_E: KeyInterface = {
+const E: KeyInterface = {
     keyCode: 101,
     which: 101,
     code: `${CODES.KEY}E`,
@@ -40,7 +40,7 @@ const CHAR_E: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_F: KeyInterface = {
+const F: KeyInterface = {
     keyCode: 102,
     which: 102,
     code: `${CODES.KEY}F`,
@@ -48,7 +48,7 @@ const CHAR_F: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_G: KeyInterface = {
+const G: KeyInterface = {
     keyCode: 103,
     which: 103,
     code: `${CODES.KEY}G`,
@@ -56,7 +56,7 @@ const CHAR_G: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_H: KeyInterface = {
+const H: KeyInterface = {
     keyCode: 104,
     which: 104,
     code: `${CODES.KEY}H`,
@@ -64,7 +64,7 @@ const CHAR_H: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_I: KeyInterface = {
+const I: KeyInterface = {
     keyCode: 105,
     which: 105,
     code: `${CODES.KEY}I`,
@@ -72,7 +72,7 @@ const CHAR_I: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_J: KeyInterface = {
+const J: KeyInterface = {
     keyCode: 106,
     which: 106,
     code: `${CODES.KEY}J`,
@@ -80,7 +80,7 @@ const CHAR_J: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_K: KeyInterface = {
+const K: KeyInterface = {
     keyCode: 107,
     which: 107,
     code: `${CODES.KEY}K`,
@@ -88,7 +88,7 @@ const CHAR_K: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_L: KeyInterface = {
+const L: KeyInterface = {
     keyCode: 108,
     which: 108,
     code: `${CODES.KEY}L`,
@@ -96,7 +96,7 @@ const CHAR_L: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_M: KeyInterface = {
+const M: KeyInterface = {
     keyCode: 109,
     which: 109,
     code: `${CODES.KEY}M`,
@@ -104,7 +104,7 @@ const CHAR_M: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_N: KeyInterface = {
+const N: KeyInterface = {
     keyCode: 110,
     which: 110,
     code: `${CODES.KEY}N`,
@@ -112,7 +112,7 @@ const CHAR_N: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_O: KeyInterface = {
+const O: KeyInterface = {
     keyCode: 111,
     which: 111,
     code: `${CODES.KEY}O`,
@@ -120,7 +120,7 @@ const CHAR_O: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_P: KeyInterface = {
+const P: KeyInterface = {
     keyCode: 112,
     which: 112,
     code: `${CODES.KEY}P`,
@@ -128,7 +128,7 @@ const CHAR_P: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_Q: KeyInterface = {
+const Q: KeyInterface = {
     keyCode: 113,
     which: 113,
     code: `${CODES.KEY}Q`,
@@ -136,7 +136,7 @@ const CHAR_Q: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_R: KeyInterface = {
+const R: KeyInterface = {
     keyCode: 114,
     which: 114,
     code: `${CODES.KEY}R`,
@@ -144,7 +144,7 @@ const CHAR_R: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_S: KeyInterface = {
+const S: KeyInterface = {
     keyCode: 115,
     which: 115,
     code: `${CODES.KEY}S`,
@@ -152,7 +152,7 @@ const CHAR_S: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_T: KeyInterface = {
+const T: KeyInterface = {
     keyCode: 116,
     which: 116,
     code: `${CODES.KEY}T`,
@@ -160,7 +160,7 @@ const CHAR_T: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_U: KeyInterface = {
+const U: KeyInterface = {
     keyCode: 117,
     which: 117,
     code: `${CODES.KEY}U`,
@@ -168,7 +168,7 @@ const CHAR_U: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_V: KeyInterface = {
+const V: KeyInterface = {
     keyCode: 118,
     which: 118,
     code: `${CODES.KEY}V`,
@@ -176,7 +176,7 @@ const CHAR_V: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_W: KeyInterface = {
+const W: KeyInterface = {
     keyCode: 119,
     which: 119,
     code: `${CODES.KEY}W`,
@@ -184,7 +184,7 @@ const CHAR_W: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_X: KeyInterface = {
+const X: KeyInterface = {
     keyCode: 120,
     which: 120,
     code: `${CODES.KEY}X`,
@@ -192,7 +192,7 @@ const CHAR_X: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_Y: KeyInterface = {
+const Y: KeyInterface = {
     keyCode: 121,
     which: 121,
     code: `${CODES.KEY}Y`,
@@ -200,7 +200,7 @@ const CHAR_Y: KeyInterface = {
     ...KeyDefaults
 }
 
-const CHAR_Z: KeyInterface = {
+const Z: KeyInterface = {
     keyCode: 122,
     which: 122,
     code: `${CODES.KEY}Z`,
@@ -209,30 +209,30 @@ const CHAR_Z: KeyInterface = {
 }
 
 export {
-    CHAR_A,
-    CHAR_B,
-    CHAR_C,
-    CHAR_D,
-    CHAR_E,
-    CHAR_F,
-    CHAR_G,
-    CHAR_H,
-    CHAR_I,
-    CHAR_J,
-    CHAR_K,
-    CHAR_L,
-    CHAR_M,
-    CHAR_N,
-    CHAR_O,
-    CHAR_P,
-    CHAR_Q,
-    CHAR_R,
-    CHAR_S,
-    CHAR_T,
-    CHAR_U,
-    CHAR_V,
-    CHAR_W,
-    CHAR_X,
-    CHAR_Y,
-    CHAR_Z
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I,
+    J,
+    K,
+    L,
+    M,
+    N,
+    O,
+    P,
+    Q,
+    R,
+    S,
+    T,
+    U,
+    V,
+    W,
+    X,
+    Y,
+    Z
 }

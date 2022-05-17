@@ -27,7 +27,7 @@ const DASH: KeyInterface = {
 const COMMA: KeyInterface = {
     keyCode: 110,
     which: 110,
-    code: `${CODES.NUMPAD}`,
+    code: `${CODES.NUMPAD}Comma`,
     name: ",",
     ...KeyDefaults
 }
