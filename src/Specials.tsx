@@ -8,7 +8,7 @@ const EXCLAMATION_MARK: KeyInterface = {
     code: `${CODES.DIGIT}1`,
     name: "!",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 /** @check */
@@ -17,7 +17,8 @@ const QUOTATION_MARK: KeyInterface = {
     which: 34,
     code: `${CODES.QUOTE}`,
     name: "\"",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const HASH: KeyInterface = {
@@ -26,7 +27,7 @@ const HASH: KeyInterface = {
     code: `${CODES.DIGIT}3`,
     name: "#",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 const DOLLAR_SIGN: KeyInterface = {
@@ -35,7 +36,7 @@ const DOLLAR_SIGN: KeyInterface = {
     code: `${CODES.DIGIT}4`,
     name: "$",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 const PERCENT: KeyInterface = {
@@ -44,7 +45,7 @@ const PERCENT: KeyInterface = {
     code: `${CODES.DIGIT}5`,
     name: "%",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 const AMPERSAND: KeyInterface = {
@@ -53,7 +54,7 @@ const AMPERSAND: KeyInterface = {
     code: `${CODES.DIGIT}7`,
     name: "&",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 /** @check */
@@ -71,7 +72,7 @@ const OPEN_PARENTHESIS: KeyInterface = {
     code: `${CODES.DIGIT}9`,
     name: "(",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 /** @check */
@@ -89,7 +90,7 @@ const ASTERISK: KeyInterface = {
     code: `${CODES.DIGIT}8`,
     name: "*",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 /** @check */
@@ -99,7 +100,7 @@ const PLUS: KeyInterface = {
     code: `${CODES.EQUAL}`,
     name: "+",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 const COMMA: KeyInterface = {
@@ -195,7 +196,7 @@ const AMPERSAT: KeyInterface = {
     code: `${CODES.DIGIT}2`,
     name: "@",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 const OPEN_BRACKET: KeyInterface = {
@@ -228,7 +229,7 @@ const CARET: KeyInterface = {
     code: `${CODES.DIGIT}6`,
     name: "^",
     ...KeyDefaults,
-    shiftKey: true
+    isShiftKey: true
 }
 
 const UNDERSCORE: KeyInterface = {

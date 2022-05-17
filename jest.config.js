@@ -1,5 +1,6 @@
 module.exports = {
   transform: {
-    "\\.tsx?$": "ts-jest",
+    "\\.ts?$": "ts-jest",
   },
+  transformIgnorePatterns: ["<rootDir>/node_modules/"],
 };

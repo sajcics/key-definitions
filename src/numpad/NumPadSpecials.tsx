@@ -1,4 +1,4 @@
-import { KeyDefaults, CODES, KeyInterface } from "../types"
+import { KeyDefaults, CODES, KeyInterface } from "../../types"
 
 const ASTERISK: KeyInterface = {
     keyCode: 106,

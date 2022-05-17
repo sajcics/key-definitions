@@ -1,11 +1,12 @@
-import { KeyInterface, KeyDefaults, CODES } from '../types';
+import { KeyInterface, KeyDefaults, CODES } from '../../types';
 
 const A: KeyInterface = {
     keyCode: 65,
     which: 65,
     code: `${CODES.KEY}A`,
     name: "A",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const B: KeyInterface = {
@@ -13,7 +14,8 @@ const B: KeyInterface = {
     which: 66,
     code: `${CODES.KEY}B`,
     name: "B",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const C: KeyInterface = {
@@ -21,7 +23,8 @@ const C: KeyInterface = {
     which: 67,
     code: `${CODES.KEY}C`,
     name: "C",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const D: KeyInterface = {
@@ -29,7 +32,8 @@ const D: KeyInterface = {
     which: 68,
     code: `${CODES.KEY}D`,
     name: "D",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const E: KeyInterface = {
@@ -37,7 +41,8 @@ const E: KeyInterface = {
     which: 69,
     code: `${CODES.KEY}E`,
     name: "E",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const F: KeyInterface = {
@@ -45,7 +50,8 @@ const F: KeyInterface = {
     which: 70,
     code: `${CODES.KEY}F`,
     name: "F",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const G: KeyInterface = {
@@ -53,7 +59,8 @@ const G: KeyInterface = {
     which: 71,
     code: `${CODES.KEY}G`,
     name: "G",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const H: KeyInterface = {
@@ -61,7 +68,8 @@ const H: KeyInterface = {
     which: 72,
     code: `${CODES.KEY}H`,
     name: "H",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const I: KeyInterface = {
@@ -69,7 +77,8 @@ const I: KeyInterface = {
     which: 73,
     code: `${CODES.KEY}I`,
     name: "I",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const J: KeyInterface = {
@@ -77,7 +86,8 @@ const J: KeyInterface = {
     which: 74,
     code: `${CODES.KEY}J`,
     name: "J",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const K: KeyInterface = {
@@ -85,7 +95,8 @@ const K: KeyInterface = {
     which: 75,
     code: `${CODES.KEY}K`,
     name: "K",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const L: KeyInterface = {
@@ -93,7 +104,8 @@ const L: KeyInterface = {
     which: 76,
     code: `${CODES.KEY}L`,
     name: "L",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const M: KeyInterface = {
@@ -101,7 +113,8 @@ const M: KeyInterface = {
     which: 77,
     code: `${CODES.KEY}M`,
     name: "M",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const N: KeyInterface = {
@@ -109,7 +122,8 @@ const N: KeyInterface = {
     which: 78,
     code: `${CODES.KEY}N`,
     name: "N",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const O: KeyInterface = {
@@ -117,7 +131,8 @@ const O: KeyInterface = {
     which: 79,
     code: `${CODES.KEY}O`,
     name: "O",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const P: KeyInterface = {
@@ -125,7 +140,8 @@ const P: KeyInterface = {
     which: 80,
     code: `${CODES.KEY}P`,
     name: "P",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const Q: KeyInterface = {
@@ -133,7 +149,8 @@ const Q: KeyInterface = {
     which: 81,
     code: `${CODES.KEY}Q`,
     name: "Q",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const R: KeyInterface = {
@@ -141,7 +158,8 @@ const R: KeyInterface = {
     which: 82,
     code: `${CODES.KEY}R`,
     name: "R",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const S: KeyInterface = {
@@ -149,7 +167,8 @@ const S: KeyInterface = {
     which: 83,
     code: `${CODES.KEY}S`,
     name: "S",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const T: KeyInterface = {
@@ -157,7 +176,8 @@ const T: KeyInterface = {
     which: 84,
     code: `${CODES.KEY}T`,
     name: "T",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const U: KeyInterface = {
@@ -165,7 +185,8 @@ const U: KeyInterface = {
     which: 85,
     code: `${CODES.KEY}U`,
     name: "U",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const V: KeyInterface = {
@@ -173,7 +194,8 @@ const V: KeyInterface = {
     which: 86,
     code: `${CODES.KEY}V`,
     name: "V",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const W: KeyInterface = {
@@ -181,7 +203,8 @@ const W: KeyInterface = {
     which: 87,
     code: `${CODES.KEY}W`,
     name: "W",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const X: KeyInterface = {
@@ -189,7 +212,8 @@ const X: KeyInterface = {
     which: 88,
     code: `${CODES.KEY}X`,
     name: "X",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const Y: KeyInterface = {
@@ -197,7 +221,8 @@ const Y: KeyInterface = {
     which: 89,
     code: `${CODES.KEY}Y`,
     name: "Y",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 const Z: KeyInterface = {
@@ -205,7 +230,8 @@ const Z: KeyInterface = {
     which: 90,
     code: `${CODES.KEY}Z`,
     name: "Z",
-    ...KeyDefaults
+    ...KeyDefaults,
+    isShiftKey: true
 }
 
 export {

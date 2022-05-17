@@ -29,6 +29,7 @@ const SHIFT_LEFT: KeyInterface = {
     code: CODES.SHIFT_LEFT,
     name: CODES.SHIFT,
     ...KeyDefaults,
+    isShiftKey: true
 };
 
 const SHIFT_RIGHT: KeyInterface = {
@@ -37,6 +38,7 @@ const SHIFT_RIGHT: KeyInterface = {
     code: CODES.SHIFT_RIGHT,
     name: CODES.SHIFT,
     ...KeyDefaults,
+    isShiftKey: true
 };
 
 const CTRL_LEFT: KeyInterface = {
@@ -45,6 +47,7 @@ const CTRL_LEFT: KeyInterface = {
     code: CODES.CONTROL_LEFT,
     name: CODES.CONTROL,
     ...KeyDefaults,
+    isCtrlKey: true
 };
 
 const CTRL_RIGHT: KeyInterface = {
@@ -53,6 +56,7 @@ const CTRL_RIGHT: KeyInterface = {
     code: CODES.CONTROL_RIGHT,
     name: CODES.CONTROL,
     ...KeyDefaults,
+    isCtrlKey: true
 };
 
 const ALT_LEFT: KeyInterface = {
@@ -61,6 +65,7 @@ const ALT_LEFT: KeyInterface = {
     code: CODES.ALT_LEFT,
     name: CODES.ALT,
     ...KeyDefaults,
+    isAltKey: true
 };
 
 const ALT_RIGHT: KeyInterface = {
@@ -69,6 +74,7 @@ const ALT_RIGHT: KeyInterface = {
     code: CODES.ALT_RIGHT,
     name: CODES.ALT,
     ...KeyDefaults,
+    isAltKey: true
 };
 
 const CAPS_LOCK: KeyInterface = {

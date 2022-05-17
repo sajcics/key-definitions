@@ -1,89 +1,90 @@
-import { KeyDefaults, CODES, KeyInterface } from "../types"
+import { KeyInterface, KeyDefaults, CODES } from "../types"
 
 const ZERO: KeyInterface = {
-    keyCode: 98,
-    which: 98,
-    code: `${CODES.NUMPAD}0`,
+    keyCode: 48,
+    which: 48,
+    code: `${CODES.DIGIT}0`,
     name: "Zero",
     ...KeyDefaults
 }
 
 const ONE: KeyInterface = {
-    keyCode: 97,
-    which: 97,
-    code: `${CODES.NUMPAD}1`,
+    keyCode: 49,
+    which: 49,
+    code: `${CODES.DIGIT}1`,
     name: "One",
     ...KeyDefaults
 }
 
 const TWO: KeyInterface = {
-    keyCode: 98,
-    which: 98,
-    code: `${CODES.NUMPAD}2`,
+    keyCode: 50,
+    which: 50,
+    code: `${CODES.DIGIT}2`,
     name: "Two",
     ...KeyDefaults
 }
 
 const THREE: KeyInterface = {
-    keyCode: 99,
-    which: 99,
-    code: `${CODES.NUMPAD}3`,
+    keyCode: 51,
+    which: 51,
+    code: `${CODES.DIGIT}3`,
     name: "Three",
     ...KeyDefaults
 }
 
 const FOUR: KeyInterface = {
-    keyCode: 100,
-    which: 100,
-    code: `${CODES.NUMPAD}4`,
+    keyCode: 52,
+    which: 52,
+    code: `${CODES.DIGIT}4`,
     name: "Four",
     ...KeyDefaults
 }
 
 const FIVE: KeyInterface = {
-    keyCode: 101,
-    which: 101,
-    code: `${CODES.NUMPAD}5`,
+    keyCode: 53,
+    which: 53,
+    code: `${CODES.DIGIT}5`,
     name: "Five",
     ...KeyDefaults
 }
 
 const SIX: KeyInterface = {
-    keyCode: 102,
-    which: 102,
-    code: `${CODES.NUMPAD}6`,
+    keyCode: 54,
+    which: 54,
+    code: `${CODES.DIGIT}6`,
     name: "Six",
     ...KeyDefaults
 }
 
 
 const SEVEN: KeyInterface = {
-    keyCode: 103,
-    which: 103,
-    code: `${CODES.NUMPAD}7`,
+    keyCode: 55,
+    which: 55,
+    code: `${CODES.DIGIT}7`,
     name: "Seven",
     ...KeyDefaults
 }
 
 
 const EIGHT: KeyInterface = {
-    keyCode: 104,
-    which: 104,
-    code: `${CODES.NUMPAD}8`,
+    keyCode: 56,
+    which: 56,
+    code: `${CODES.DIGIT}8`,
     name: "Eight",
     ...KeyDefaults
 }
 
 
 const NINE: KeyInterface = {
-    keyCode: 105,
-    which: 105,
-    code: `${CODES.NUMPAD}9`,
+    keyCode: 57,
+    which: 57,
+    code: `${CODES.DIGIT}9`,
     name: "Nine",
     ...KeyDefaults
 }
 
 export {
+    ZERO,
     ONE,
     TWO,
     THREE,
