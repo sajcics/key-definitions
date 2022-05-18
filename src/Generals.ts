@@ -238,5 +238,6 @@ export {
     INSERT,
     DELETE,
     NUM_LOCK,
-    SCROLL_LOCK
+    SCROLL_LOCK,
+    HELP
 };

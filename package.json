@@ -1,22 +1,32 @@
 {
-  "name": "keys",
+  "name": "key-definitions",
   "version": "0.0.1",
   "description": "get a keyboard key definitions",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "eslint": "eslint"
   },
-  "author": "sajcics",
+  "author": {
+    "name": "sajcics",
+    "email": "info@simpleapproach.hr",
+    "url": "https://github.com/sajcics"
+  },
   "license": "ISC",
   "dependencies": {
-    "typescript": "^4.6.3"
+    
   },
   "devDependencies": {
+
+    "@rollup/plugin-typescript": "^8.3.2",
     "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0",
     "jest": "^27.5.1",
-    "ts-jest": "^27.1.4"
+    "rollup": "^2.73.0",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
   }
 }

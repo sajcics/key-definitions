@@ -1,8 +1,6 @@
 # About
 
-All keyboard keys definition create by following MDN official site. Now, you do not have to search or remember key codes.
-
-example of usage
+Key-definitions module is made by one purpose: to add keyCode numbers a meaning.
 
 **before**
 
@@ -14,7 +12,7 @@ if (e.target.value === 13) {
 **now**
 
 ```js
-import { GENERALS } from "keys";
+import { GENERALS } from "key-definitions";
 
 if (e.target.value === GENERALS.ENTER.keyCode) {
 }
@@ -54,3 +52,5 @@ https://keycode.info/for/!
 https://www.computerhope.com/jargon/s/specchar.htm
 
 https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code
+
+https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
