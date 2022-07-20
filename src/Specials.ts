@@ -311,5 +311,6 @@ export {
     VERTICAL_BAR,
     CLOSE_BRACE,
     TILDA,
-    APOSTROPHE
+    APOSTROPHE,
+    PLUS
 }
