@@ -2,21 +2,36 @@
   "name": "keys",
   "version": "0.0.1",
   "description": "get a keyboard key definitions",
-  "main": "index.js",
+  "module": "dist/bundle.js",
+  "types": "dist/src/bundle.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "tsc": "tsc",
+    "build": "rollup --config rollup.config.ts",
+    "build:prod": "NODE_ENV=production rollup --config rollup.config.ts ",
+    "eslint": "eslint"
   },
-  "author": "sajcics",
+  "author": {
+    "name": "sajcics",
+    "url": "https://github.com/sajcics"
+  },
   "license": "ISC",
-  "dependencies": {
-    "typescript": "^4.6.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0",
     "jest": "^27.5.1",
-    "ts-jest": "^27.1.4"
+    "rollup": "^2.73.0",
+    "rollup-plugin-delete": "true2.0.0",
+    "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-terser": "true7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
   }
 }
