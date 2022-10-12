@@ -18,6 +18,12 @@
     "name": "sajcics",
     "url": "https://github.com/sajcics"
   },
+  "keywords": [
+    "keys",
+    "keyboard",
+    "events",
+    "keycode"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
