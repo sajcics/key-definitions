@@ -1,5 +1,9 @@
-import {Alpha, Functions, Generals, Specials, Digits, Numpad} from "../src";
-
+import {LowerCase, UpperCase}from "../src/base/alpha"
+import * as Functions from "../src/base/Functions"
+import * as Generals from "../src/base/Generals";
+import * as Specials from "../src/base/Specials"
+import * as Digits from "../src/base/Digits"
+import * as Numpad from "../src/base/numpad";
 
 const checkDefinition = (keyDefinitions, property) => {
  for (const keyDefinition in keyDefinitions) {
@@ -13,14 +17,13 @@ const checkDefinition = (keyDefinitions, property) => {
 }
 
 const keyDefinitionsList = {
- AlphaLowerCase: Alpha.LowerCase,
- AlphaUpperCase: Alpha.UpperCase,
+ AlphaLowerCase: LowerCase,
+ AlphaUpperCase: UpperCase,
  Functions,
  Generals,
  Specials,
  Digits,
- NumpadGeneral: Numpad.Generals,
- NumpadDigits: Numpad.Digits
+ Numpad,
 }
 
 

@@ -1,8 +1,6 @@
 # About
 
-Key-definitions module is made by one purpose: to have key definitions in one place and give event numbers a meaning. Key definitions are followed by MDN documentation and as recommended a web developers should check `event.key` on `keyup` event to detect pressed key (not a `keydown` event). The reason for this you can see an example described in documentation [link](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key#case_1).
-
-**The keydown and keyup events provide a code indicating which key is pressed, while keypress indicates which character was entered.** [link](https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event) for details.
+Key-definitions module is made by one purpose: to have key definitions in one place. Key definitions are followed by MDN documentation and as recommended a web developers should check `event.key` on `keyup` event to detect pressed key (not a `keydown` event nor `keyCode` property). The reason for this read more in [documentation](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key#case_1).
 
 Because there are numerous keyboard layouts this library is not 100% bulletproof.
 
@@ -24,13 +22,13 @@ if (e.key === "ArrowLeft") {
 **now**
 
 ```js
-import { Alpha } from "key-definitions";
+import { UpperCase, ARROW_LEFT } from "key-definitions";
 
-if (e.key === Alpha.UpperCase.A.key) {
+if (e.key === UpperCase.A.key) {
   // if event key is equal to "A"
 }
 
-if (e.key === Generals.ArrowLeft.key) {
+if (e.key === ARROW_LEFT.key) {
   /// if event key is a ArrowLeft
 }
 ```
@@ -104,12 +102,12 @@ isCharacter(49); // check '1' value --> false
 By default US layout is set, for different layout you need to import it independently.
 
 ```js
-import { Alpha }, Layout_CRO from "key-definitions";
+import { LowerCase }, Layout_CRO from "key-definitions";
 
-console.log(Alpha.LowerCase.A.key); // --> returns US layout --> value 'a'
-console.log(Layout_CRO.Alpha.LowerCase.A.key); // --> returns croatian layout --> value 'a'
-console.log(Layout_CRO.Alpha.LowerCase.Č.key); // --> returns croatian layout --> value 'č'
-console.log(Alpha.LowerCase.Č.key); // --> undefined (not supported for US layout)
+console.log(LowerCase.A.key); // --> returns US layout --> value 'a'
+console.log(Layout_CRO.LowerCase.A.key); // --> returns croatian layout --> value 'a'
+console.log(Layout_CRO.LowerCase.Č.key); // --> returns croatian layout --> value 'č'
+console.log(LowerCase.Č.key); // --> undefined (not supported for US layout)
 ```
 
 ## Sections
@@ -128,6 +126,13 @@ Includes lower and upper case `a-zA-Z`.
 | Ž   | cro    |
 | Đ   | cro    |
 | Š   | cro    |
+
+```js
+import { LowerCase, UpperCase } from "key-definitions";
+
+console.log(LowerCase.A.key); // --> returns value 'a'
+console.log(UpperCase.A.key); // --> returns value 'A'
+```
 
 ### Digits
 
@@ -149,9 +154,10 @@ Includes all numerical keys `0-9` in alphanumeric keyboard section.
 | 9   | NINE  |
 
 ```js
-import { Digits } from "key-definitions";
+import { ZERO, SEVEN } from "key-definitions";
 
-console.log(Digits.ZERO.key); // returns value '0'
+console.log(ZERO.key); // returns value '0'
+console.log(SEVEN.key); // returns value '7'
 ```
 
 ### Numpad
@@ -196,9 +202,9 @@ console.log(Numpad.ZERO.key); // returns '0'
 Includes all keys from `F1-F12` in function section.
 
 ```js
-import { Functions } from "key-definitions";
+import { F1 } from "key-definitions";
 
-console.log(Functions.F1.key); // returns value 'F1'
+console.log(F1.key); // returns value 'F1'
 ```
 
 ### Generics
@@ -237,12 +243,12 @@ Includes functional keys in alphanumeric keyboard section. Example: `AltLeft, Sh
 | pause        | PAUSE        |
 
 ```js
-import { Generals } from "key-definitions";
+import { ALT_LEFT, ALT_RIGHT } from "key-definitions";
 
-console.log(Generals.ALT_LEFT.key); // returns value 'Alt'
-console.log(Generals.ALT_LEFT.code); // returns value 'AltLeft'
-console.log(Generals.ALT_RIGHT.key); // returns 'Alt'
-console.log(Generals.ALT_RIGHT.code); // returns 'AltRight'
+console.log(ALT_LEFT.key); // returns value 'Alt'
+console.log(ALT_LEFT.code); // returns value 'AltLeft'
+console.log(ALT_RIGHT.key); // returns 'Alt'
+console.log(ALT_RIGHT.code); // returns 'AltRight'
 ```
 
 ### Specials
@@ -285,9 +291,9 @@ Includes special keys like `question marks )!?.$&%/#"\*)` as part of alphanumeri
 | ~   | TILDA                |
 
 ```js
-import { Specials } from "key-definitions";
+import { DOLLAR_SIGN } from "key-definitions";
 
-console.log(Specials.DOLLAR_SIGN.key); // returns value '$'
+console.log(DOLLAR_SIGN.key); // returns value '$'
 ```
 
 ### Other resources:
