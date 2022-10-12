@@ -1,85 +1,86 @@
-import { KeyDefaults, CODES, KeyInterface } from "../../types"
+import { KeyDefaults, CODES, KeyInterface } from "../../../types"
 
+/**
+ * @checked 21 July 2022
+ */
 const ZERO: KeyInterface = {
-    keyCode: 98,
-    which: 98,
+    keyCode: 96,
+    hex: "0x60",
     code: `${CODES.NUMPAD}0`,
-    name: "Zero",
+    key: "0",
     ...KeyDefaults
 }
 
 const ONE: KeyInterface = {
     keyCode: 97,
-    which: 97,
+    hex: "0x61",
     code: `${CODES.NUMPAD}1`,
-    name: "One",
+    key: "1",
     ...KeyDefaults
 }
 
 const TWO: KeyInterface = {
     keyCode: 98,
-    which: 98,
+    hex: "0x62",
     code: `${CODES.NUMPAD}2`,
-    name: "Two",
+    key: "2",
     ...KeyDefaults
 }
 
 const THREE: KeyInterface = {
     keyCode: 99,
-    which: 99,
+    hex: "0x63",
     code: `${CODES.NUMPAD}3`,
-    name: "Three",
+    key: "3",
     ...KeyDefaults
 }
 
 const FOUR: KeyInterface = {
     keyCode: 100,
-    which: 100,
+    hex: "0x64",
     code: `${CODES.NUMPAD}4`,
-    name: "Four",
+    key: "4",
     ...KeyDefaults
 }
 
 const FIVE: KeyInterface = {
     keyCode: 101,
-    which: 101,
+    hex: "0x65",
     code: `${CODES.NUMPAD}5`,
-    name: "Five",
+    key: "5",
     ...KeyDefaults
 }
 
 const SIX: KeyInterface = {
     keyCode: 102,
-    which: 102,
+    hex: "0x66",
     code: `${CODES.NUMPAD}6`,
-    name: "Six",
+    key: "6",
     ...KeyDefaults
 }
-
 
 const SEVEN: KeyInterface = {
     keyCode: 103,
-    which: 103,
+    hex: "0x67",   
     code: `${CODES.NUMPAD}7`,
-    name: "Seven",
+    key: "7",
     ...KeyDefaults
 }
 
-
 const EIGHT: KeyInterface = {
     keyCode: 104,
-    which: 104,
+    hex: "0x68",    
     code: `${CODES.NUMPAD}8`,
-    name: "Eight",
+    key: "8",
     ...KeyDefaults
 }
 
 
 const NINE: KeyInterface = {
     keyCode: 105,
-    which: 105,
+    hex: "0x69",
     code: `${CODES.NUMPAD}9`,
-    name: "Nine",
+    key: "9",
     ...KeyDefaults
 }
 

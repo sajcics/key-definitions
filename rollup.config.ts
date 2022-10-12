@@ -4,7 +4,7 @@ import dts from "rollup-plugin-dts";
 import deleteDts from "rollup-plugin-delete";
 
 const config = [{
-  input: "src/index.ts",
+  input: "index.ts",
   output: [{
     file: "dist/bundle.js",
     format: "es",
@@ -15,7 +15,7 @@ const config = [{
     tsconfig: "./tsconfig.json"
   }), terser()]
 }, {
-  input: "src/index.ts",
+  input: "index.ts",
   output: [{
     file: "dist/bundle.d.ts",
     format: "esm"
