@@ -1,6 +1,6 @@
 {
   "name": "key-definitions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get a keyboard key definition",
   "module": "dist/bundle.js",
   "types": "dist/src/bundle.d.ts",
