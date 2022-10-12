@@ -24,7 +24,7 @@ function isCharacter(x: KeyboardEvent | string | number): x is CHAR {
     ...Object.values(Layout_CRO.UpperCase),
   ];
 
-  if (typeof x === "object") {
+  if (x instanceof Object) {
     if (!x.code || !x.key || !x.keyCode) {
       return false;
     }
