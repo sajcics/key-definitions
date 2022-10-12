@@ -1,8 +1,15 @@
-import {Alpha, Functions, Generals, Specials, Digits,NumPads} from "../src";
-
+import {LowerCase, UpperCase}from "../src/base/alpha"
+import * as Functions from "../src/base/Functions"
+import * as Generals from "../src/base/Generals";
+import * as Specials from "../src/base/Specials"
+import * as Digits from "../src/base/Digits"
+import * as Numpad from "../src/base/numpad";
 
 const checkDefinition = (keyDefinitions, property) => {
  for (const keyDefinition in keyDefinitions) {
+  if (keyDefinition === "__esModule") {
+   continue;
+  }
   it(`test ${keyDefinition}`, () => {
    expect(keyDefinitions[keyDefinition][property]).toBeDefined();
   })
@@ -10,14 +17,15 @@ const checkDefinition = (keyDefinitions, property) => {
 }
 
 const keyDefinitionsList = {
- AlphaLowerCase: Alpha.LowerCase,
- AlphaUpperCase: Alpha.UpperCase,
+ AlphaLowerCase: LowerCase,
+ AlphaUpperCase: UpperCase,
  Functions,
  Generals,
  Specials,
  Digits,
- NumPads
+ Numpad,
 }
+
 
 describe("Check 'keyCode' definitions", () => {
  for (const keyDefinitions in keyDefinitionsList) {
@@ -25,6 +33,7 @@ describe("Check 'keyCode' definitions", () => {
    checkDefinition(keyDefinitionsList[keyDefinitions], "keyCode");
   })
  }
+ 
 })
 
 describe("Check 'code' definition", () => {
@@ -35,10 +44,10 @@ describe("Check 'code' definition", () => {
  }
 })
 
-describe("Check 'name' definition", () => {
+describe("Check 'key' definition", () => {
  for (const keyDefinitions in keyDefinitionsList) {
   describe(`Check ${keyDefinitions}`, () => {
-   checkDefinition(keyDefinitionsList[keyDefinitions], "name");
+   checkDefinition(keyDefinitionsList[keyDefinitions], "key");
   })
  }
 })

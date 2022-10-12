@@ -1,9 +1,8 @@
-export { CODES, KeyDefaults, KeyInterface } from "../types";
-export * as Alpha from "./alpha";
-export * as Functions from "./Functions";
-export * as Generals from "./Generals";
-export * as Specials from "./Specials";
-export * as Digits from "./Digits";
-export * as NumPads from "./numpad";
+import Layout_CRO from "./layouts/cro";
+import { isCharacter } from "../types/guards";
 
-
+export * from './layouts/us';
+export {
+ Layout_CRO,
+ isCharacter
+};
