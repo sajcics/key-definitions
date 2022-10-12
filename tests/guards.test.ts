@@ -28,31 +28,33 @@ describe("Test type guard isCharacter", () => {
   });
 
   describe("Test by 'code'", () => {
-   it("test 'a'", () => {
-     expect(isCharacter("KeyA")).toBeTruthy();
-   });
+    it("test 'a'", () => {
+      expect(isCharacter("KeyA")).toBeTruthy();
+    });
 
-   it("test 'Z'", () => {
-     expect(isCharacter("KeyZ")).toBeTruthy();
-   });
+    it("test 'Z'", () => {
+      expect(isCharacter("KeyZ")).toBeTruthy();
+    });
 
-   it("test 'ENTER'", () => {
-     expect(isCharacter("Enter")).toBeFalsy();
-   });
+    it("test 'ENTER'", () => {
+      expect(isCharacter("Enter")).toBeFalsy();
+    });
 
-   it("test 'a'", () => {
-    expect(isCharacter("keyA")).toBeTruthy();
+    it("test 'a'", () => {
+      expect(isCharacter("keyA")).toBeTruthy();
+    });
+
+    it("test '1'", () => {
+      expect(isCharacter("Digit1")).toBeFalsy();
+    });
   });
-
-   it("test '1'", () => {
-     expect(isCharacter("Digit1")).toBeFalsy();
-   });
- });
 
 
   describe("test by KeyboardEvent", () => {
     it("test 'keyEvent' key 'a'", () => {
-      const event = { key: "a", keyCode: 65, code: "KeyA" };
+      const event = {
+        key: "a", keyCode: 65, code: "KeyA" 
+      };
       expect(isCharacter(event as KeyboardEvent)).toBeTruthy();
     });
 
@@ -67,7 +69,9 @@ describe("Test type guard isCharacter", () => {
     });
 
     it("test 'keyEvent' key '1'", () => {
-      const event = { key: "1", keyCode: 49, code: "Digit1" };
+      const event = {
+        key: "1", keyCode: 49, code: "Digit1" 
+      };
       expect(isCharacter(event as KeyboardEvent)).toBeFalsy();
     });
   });
@@ -86,7 +90,7 @@ describe("Test type guard isCharacter", () => {
     });
 
     it("test 'keyEvent' key '1'", () => {
-       expect(isCharacter(49)).toBeFalsy();
+      expect(isCharacter(49)).toBeFalsy();
     });
   });
 });

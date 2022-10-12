@@ -1,4 +1,6 @@
-import { KeyDefaults, CODES, KeyInterface } from "../../../types";
+import {
+  KeyDefaults, CODES, KeyInterface 
+} from "../../../types";
 
 
 /** @checked 21 July 2022 */
@@ -7,7 +9,7 @@ const ENTER: KeyInterface = {
   hex: "0x0D",
   code: `${CODES.NUMPAD}Enter`,
   key: CODES.ENTER,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const EQUAL: KeyInterface = {
@@ -60,12 +62,12 @@ const EQUAL: KeyInterface = {
       browser: "gecko",
       code: 61,
       hex: "0x3D"
-    },
+    }
   ],
   hex: ["0x0C", "0xBB", "0x3D"],
   code: `${CODES.NUMPAD}${CODES.EQUAL}`,
   key: "=",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 /** @check */
@@ -73,7 +75,7 @@ const BACKSPACE: KeyInterface = {
   keyCode: undefined,
   code: `${CODES.NUMPAD}Backspace`,
   key: "",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const MULTIPLY: KeyInterface = {
@@ -81,7 +83,7 @@ const MULTIPLY: KeyInterface = {
   hex: "0x6A",
   code: `${CODES.NUMPAD}Multiply`,
   key: "*",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const ADD: KeyInterface = {
@@ -89,7 +91,7 @@ const ADD: KeyInterface = {
   hex: "0x6B",
   code: `${CODES.NUMPAD}Add`,
   key: "+",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const SUBSTRACT: KeyInterface = {
@@ -97,7 +99,7 @@ const SUBSTRACT: KeyInterface = {
   hex: "0x6D",
   code: `${CODES.NUMPAD}Substract`,
   key: "-",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const COMMA: KeyInterface = {
@@ -150,12 +152,12 @@ const COMMA: KeyInterface = {
       browser: "gecko",
       code: null,
       hex: null
-    },
+    }
   ],
   hex: ["0x6C", "0xC2", "0xBC"],
   code: `${CODES.NUMPAD}Comma`,
   key: ",",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const DIVIDE: KeyInterface = {
@@ -163,14 +165,14 @@ const DIVIDE: KeyInterface = {
   hex: "0x6F",
   code: `${CODES.NUMPAD}Divide`,
   key: "/",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const DECIMAL: KeyInterface = {
   keyCode: 110,
   hex: "0x6E",
   code: `${CODES.NUMPAD}Decimal`,
-  key: ".",
+  key: "."
 };
 
 const ARROW_LEFT: KeyInterface = {
@@ -178,7 +180,7 @@ const ARROW_LEFT: KeyInterface = {
   hex: "0x25",
   code: `${CODES.NUMPAD}3`,
   key: CODES.ARROW_LEFT,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const ARROW_UP: KeyInterface = {
@@ -186,7 +188,7 @@ const ARROW_UP: KeyInterface = {
   hex: "0x26",
   code: `${CODES.NUMPAD}8`,
   key: CODES.ARROW_UP,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const ARROW_RIGHT: KeyInterface = {
@@ -194,15 +196,15 @@ const ARROW_RIGHT: KeyInterface = {
   hex: "0x27",
   code: `${CODES.NUMPAD}6`,
   key: CODES.ARROW_RIGHT,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
-const  ARROW_DOWN: KeyInterface = {
+const ARROW_DOWN: KeyInterface = {
   keyCode: 40,
   hex: "0x28",
   code: `${CODES.NUMPAD}2`,
   key: CODES. ARROW_DOWN,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const INSERT: KeyInterface = {
@@ -210,7 +212,7 @@ const INSERT: KeyInterface = {
   hex: "0x2D",
   code: `${CODES.NUMPAD}0`,
   key: CODES.INSERT,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const END: KeyInterface = {
@@ -218,35 +220,35 @@ const END: KeyInterface = {
   hex: "0x23",
   code: `${CODES.NUMPAD}1`,
   key: CODES.END,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 const PAGE_DOWN: KeyInterface = {
   keyCode: 34,
   hex: "0x22",
   code: `${CODES.NUMPAD}3`,
-  key: CODES.PAGE_DOWN,
+  key: CODES.PAGE_DOWN
 };
 
 const HOME: KeyInterface = {
   keyCode: 36,
   hex: "0x24",
   code: `${CODES.NUMPAD}7`,
-  key: CODES.HOME,
+  key: CODES.HOME
 };
 
 const PAGE_UP: KeyInterface = {
   keyCode: 33,
   hex: "0x21",
   code: `${CODES.NUMPAD}9`,
-  key: CODES.PAGE_UP,
+  key: CODES.PAGE_UP
 };
 
 const DELETE: KeyInterface = {
   keyCode: 46,
   hex: "0x2E",
   code: `${CODES.NUMPAD}Decimal`,
-  key: CODES.DELETE,
+  key: CODES.DELETE
 };
 
 export {
@@ -267,5 +269,5 @@ export {
   PAGE_DOWN,
   HOME,
   PAGE_UP,
-  DELETE,
+  DELETE
 };

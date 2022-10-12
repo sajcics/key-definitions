@@ -3,12 +3,16 @@ import { compare } from "../helpers";
 describe("Test helper compare", () => {
   describe("test by KeyboardEvent", () => {
     it("test 'keyEvent' key 'a'", () => {
-      const event = { key: "a", keyCode: 65, code: "KeyA" };
+      const event = {
+        key: "a", keyCode: 65, code: "KeyA" 
+      };
       expect(compare(event as KeyboardEvent, "a")).toBeTruthy();
     });
 
     it("test 'keyEvent' key 'z'", () => {
-      const event = { key: "z", keyCode: 90, code: "KeyZ" };
+      const event = {
+        key: "z", keyCode: 90, code: "KeyZ" 
+      };
       expect(compare(event as KeyboardEvent, "a")).toBeFalsy();
     });
 
@@ -18,19 +22,25 @@ describe("Test helper compare", () => {
     });
 
     it("test 'keyEvent' key '?'", () => {
-      const event = { key: "?", keyCode: 191, code: "Slash" };
+      const event = {
+        key: "?", keyCode: 191, code: "Slash" 
+      };
       expect(compare(event as KeyboardEvent, "?")).toBeTruthy();
     });
 
     it("test 'keyEvent' key 'shift'", () => {
-     const event = { key: "Shift", keyCode: 16, code: "ShiftLeft" };
-     expect(compare(event as KeyboardEvent, "Shift")).toBeTruthy();
-   });
+      const event = {
+        key: "Shift", keyCode: 16, code: "ShiftLeft" 
+      };
+      expect(compare(event as KeyboardEvent, "Shift")).toBeTruthy();
+    });
 
-   it("test 'keyEvent' key 'shift right'", () => {
-    const event = { key: "Shift", keyCode: 16, code: "ShiftRight" };
-    expect(compare(event as KeyboardEvent, "Shift")).toBeTruthy();
-  });
+    it("test 'keyEvent' key 'shift right'", () => {
+      const event = {
+        key: "Shift", keyCode: 16, code: "ShiftRight" 
+      };
+      expect(compare(event as KeyboardEvent, "Shift")).toBeTruthy();
+    });
   });
 
   describe("test by string", () => {
@@ -47,7 +57,7 @@ describe("Test helper compare", () => {
     });
 
     it("test key '!'", () => {
-     expect(compare("!", "?")).toBeFalsy();
-   });
+      expect(compare("!", "?")).toBeFalsy();
+    });
   });
 });

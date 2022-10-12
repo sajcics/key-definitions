@@ -1,4 +1,6 @@
-import { KeyInterface, KeyDefaults, CODES } from "../../../types";
+import {
+  KeyInterface, KeyDefaults, CODES 
+} from "../../../types";
 
 export const A: KeyInterface = {
   keyCode: 65,
@@ -136,147 +138,147 @@ export const Q: KeyInterface = {
       browser: "chrome",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "windows",
       browser: "ie",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "windows",
       browser: "ie",
       lang: "el",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "windows",
       browser: "chrome",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "windows",
       browser: "chrome",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "windows",
       browser: "chrome",
       lang: "el",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "chrome",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "chrome",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "chrome",
       lang: "el",
       code: 186,
-      hex: "0xBA",
+      hex: "0xBA"
     },
     {
       os: "linux",
       browser: "chromium",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "linux",
       browser: "chromium",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "linux",
       browser: "chromium",
       lang: "el",
       code: 186,
-      hex: "0xBA",
+      hex: "0xBA"
     },
     {
       os: "mac",
       browser: "safari",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "safari",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "safari",
       lang: "el",
       code: 186,
-      hex: "0xBA",
+      hex: "0xBA"
     },
     {
       os: "windows",
       browser: "gecko",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "windows",
       browser: "gecko",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "windows",
       browser: "gecko",
       lang: "el",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "gecko",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "gecko",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "mac",
       browser: "gecko",
       lang: "el",
       code: 186,
-      hex: "0xBA",
+      hex: "0xBA"
     },
 
     {
@@ -284,22 +286,22 @@ export const Q: KeyInterface = {
       browser: "gecko",
       lang: "us",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "linux",
       browser: "gecko",
       lang: "ja",
       code: 81,
-      hex: "0x51",
+      hex: "0x51"
     },
     {
       os: "linux",
       browser: "gecko",
       lang: "el",
       code: 81,
-      hex: "0x51",
-    },
+      hex: "0x51"
+    }
   ],
   code: `${CODES.KEY}Q`,
   key: "q",

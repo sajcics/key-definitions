@@ -1,4 +1,6 @@
-import { LowerCase, UpperCase } from "../src/base/alpha";
+import {
+  LowerCase, UpperCase 
+} from "../src/base/alpha";
 import * as Layout_CRO from "../src/layouts/cro/alpha";
 
 type CHAR =
@@ -21,7 +23,7 @@ function isCharacter(x: KeyboardEvent | string | number): x is CHAR {
     ...Object.values(LowerCase),
     ...Object.values(UpperCase),
     ...Object.values(Layout_CRO.LowerCase),
-    ...Object.values(Layout_CRO.UpperCase),
+    ...Object.values(Layout_CRO.UpperCase)
   ];
 
   if (x instanceof Object) {

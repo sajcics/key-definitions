@@ -1,11 +1,13 @@
-import { KeyInterface, KeyDefaults, CODES } from "../../types";
+import {
+  KeyInterface, KeyDefaults, CODES 
+} from "../../types";
 
 export const TAB: KeyInterface = {
   keyCode: 9,
   hex: "0x09",
   code: CODES.TAB,
   key: CODES.TAB,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const ENTER: KeyInterface = {
@@ -13,7 +15,7 @@ export const ENTER: KeyInterface = {
   hex: "0x0D",
   code: CODES.ENTER,
   key: CODES.ENTER,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const SHIFT_LEFT: KeyInterface = {
@@ -22,7 +24,7 @@ export const SHIFT_LEFT: KeyInterface = {
   code: CODES.SHIFT_LEFT,
   key: CODES.SHIFT,
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const SHIFT_RIGHT: KeyInterface = {
@@ -31,7 +33,7 @@ export const SHIFT_RIGHT: KeyInterface = {
   code: CODES.SHIFT_RIGHT,
   key: CODES.SHIFT,
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const CTRL_LEFT: KeyInterface = {
@@ -40,7 +42,7 @@ export const CTRL_LEFT: KeyInterface = {
   code: CODES.CONTROL_LEFT,
   key: CODES.CONTROL,
   ...KeyDefaults,
-  isCtrlKey: true,
+  isCtrlKey: true
 };
 
 export const CTRL_RIGHT: KeyInterface = {
@@ -49,7 +51,7 @@ export const CTRL_RIGHT: KeyInterface = {
   code: CODES.CONTROL_RIGHT,
   key: CODES.CONTROL,
   ...KeyDefaults,
-  isCtrlKey: true,
+  isCtrlKey: true
 };
 
 export const ALT_LEFT: KeyInterface = {
@@ -58,7 +60,7 @@ export const ALT_LEFT: KeyInterface = {
   code: CODES.ALT_LEFT,
   key: CODES.ALT,
   ...KeyDefaults,
-  isAltKey: true,
+  isAltKey: true
 };
 
 export const ALT_RIGHT: KeyInterface = {
@@ -67,7 +69,7 @@ export const ALT_RIGHT: KeyInterface = {
   code: CODES.ALT_RIGHT,
   key: CODES.ALT,
   ...KeyDefaults,
-  isAltKey: true,
+  isAltKey: true
 };
 
 export const CAPS_LOCK: KeyInterface = {
@@ -75,7 +77,7 @@ export const CAPS_LOCK: KeyInterface = {
   hex: "0x14",
   code: CODES.CAPS_LOCK,
   key: CODES.CAPS_LOCK,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const ESC: KeyInterface = {
@@ -83,7 +85,7 @@ export const ESC: KeyInterface = {
   hex: "0x1B",
   code: CODES.ESCAPE,
   key: CODES.ESCAPE,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const SPACE: KeyInterface = {
@@ -91,7 +93,7 @@ export const SPACE: KeyInterface = {
   hex: "0x20",
   code: CODES.SPACE,
   key: " ",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const PAGE_UP: KeyInterface = {
@@ -99,7 +101,7 @@ export const PAGE_UP: KeyInterface = {
   hex: "0x21",
   code: CODES.PAGE_UP,
   key: CODES.PAGE_UP,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const PAGE_DOWN: KeyInterface = {
@@ -107,7 +109,7 @@ export const PAGE_DOWN: KeyInterface = {
   hex: "0x22",
   code: CODES.PAGE_DOWN,
   key: CODES.PAGE_DOWN,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const END: KeyInterface = {
@@ -115,7 +117,7 @@ export const END: KeyInterface = {
   hex: "0x23",
   code: CODES.END,
   key: CODES.END,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const HOME: KeyInterface = {
@@ -123,7 +125,7 @@ export const HOME: KeyInterface = {
   hex: "0x24",
   code: CODES.HOME,
   key: CODES.HOME,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const ARROW_LEFT: KeyInterface = {
@@ -131,7 +133,7 @@ export const ARROW_LEFT: KeyInterface = {
   hex: "0x25",
   code: CODES.ARROW_LEFT,
   key: CODES.ARROW_LEFT,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const ARROW_UP: KeyInterface = {
@@ -139,7 +141,7 @@ export const ARROW_UP: KeyInterface = {
   hex: "0x26",
   code: CODES.ARROW_UP,
   key: CODES.ARROW_UP,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const ARROW_RIGHT: KeyInterface = {
@@ -147,15 +149,15 @@ export const ARROW_RIGHT: KeyInterface = {
   hex: "0x27",
   code: CODES.ARROW_RIGHT,
   key: CODES.ARROW_RIGHT,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
-export const  ARROW_DOWN: KeyInterface = {
+export const ARROW_DOWN: KeyInterface = {
   keyCode: 40,
   hex: "0x28",
   code: CODES. ARROW_DOWN,
   key: CODES. ARROW_DOWN,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const PRINT_SCREEN: KeyInterface = {
@@ -208,12 +210,12 @@ export const PRINT_SCREEN: KeyInterface = {
       browser: "gecko",
       code: 42,
       hex: "0x2A"
-    },
+    }
   ],
   hex: ["0x2C", "0x7C", "0x2A"],
   code: CODES.PRINT_SCREEN,
   key: CODES.PRINT_SCREEN,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const INSERT: KeyInterface = {
@@ -221,7 +223,7 @@ export const INSERT: KeyInterface = {
   hex: "0x2D",
   code: CODES.INSERT,
   key: CODES.INSERT,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const DELETE: KeyInterface = {
@@ -229,7 +231,7 @@ export const DELETE: KeyInterface = {
   hex: "0x2E",
   code: CODES.DELETE,
   key: CODES.DELETE,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const NUM_LOCK: KeyInterface = {
@@ -237,7 +239,7 @@ export const NUM_LOCK: KeyInterface = {
   hex: "0x90",
   code: CODES.NUM_LOCK,
   key: CODES.NUM_LOCK,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const SCROLL_LOCK: KeyInterface = {
@@ -290,12 +292,12 @@ export const SCROLL_LOCK: KeyInterface = {
       browser: "gecko",
       code: 145,
       hex: "0x91"
-    },
+    }
   ],
   hex: ['0x91', '0x7D'],
   code: CODES.SCROLL_LOCK,
   key: CODES.SCROLL_LOCK,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const HELP: KeyInterface = {
@@ -329,7 +331,7 @@ export const HELP: KeyInterface = {
       os: "mac",
       browser: "safari",
       code: 45,
-      hex: "0x2D",
+      hex: "0x2D"
     },
     {
       os: "windows",
@@ -348,12 +350,12 @@ export const HELP: KeyInterface = {
       browser: "gecko",
       code: 6,
       hex: "0x06"
-    },
+    }
   ],
   hex: ["0x06", "0x2D", "0x2F"],
   code: CODES.HELP,
   key: CODES.HELP,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const PAUSE: KeyInterface = {
@@ -406,11 +408,11 @@ export const PAUSE: KeyInterface = {
       browser: "gecko",
       code: 19,
       hex: "0x13"
-    },
+    }
   ],
   hex: ["0x13", "0x7E"],
   code: CODES.SCROLL_LOCK,
   key: CODES.SCROLL_LOCK,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
