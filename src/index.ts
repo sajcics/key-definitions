@@ -3,4 +3,6 @@ import { isCharacter } from "../types/guards";
 import { compare } from "../helpers";
 
 export * from "./layouts/us";
-export { Layout_CRO, isCharacter, compare };
+export {
+  Layout_CRO, isCharacter, compare 
+};

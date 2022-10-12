@@ -5,5 +5,17 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
-  ]
+  ],
+  "rules": {
+    "consistent-return": 2,
+    "indent": [1, 2],
+    "no-else-return": 1,
+    "semi": [1, "always"],
+    "space-unary-ops": 2,
+    "object-curly-newline": ["error", { "minProperties": 2 }],
+    "object-curly-spacing": ["error", "always"],
+    "no-multi-spaces": "error",
+    "no-console": "error",
+    "comma-dangle": ["error", { "arrays": "never", "objects": "never" }]
+  }
 }

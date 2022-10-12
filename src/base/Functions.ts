@@ -1,11 +1,13 @@
-import { KeyInterface, KeyDefaults, CODES } from "../../types";
+import {
+  KeyInterface, KeyDefaults, CODES 
+} from "../../types";
 
 export const F1: KeyInterface = {
   keyCode: 112,
   hex: "0x70",
   code: `${CODES.FUNCTION}1`,
   key: `${CODES.FUNCTION}1`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F2: KeyInterface = {
@@ -13,7 +15,7 @@ export const F2: KeyInterface = {
   hex: "0x71",
   code: `${CODES.FUNCTION}2`,
   key: `${CODES.FUNCTION}2`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F3: KeyInterface = {
@@ -21,7 +23,7 @@ export const F3: KeyInterface = {
   hex: "0x72",
   code: `${CODES.FUNCTION}3`,
   key: `${CODES.FUNCTION}3`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F4: KeyInterface = {
@@ -29,7 +31,7 @@ export const F4: KeyInterface = {
   hex: "0x73",
   code: `${CODES.FUNCTION}4`,
   key: `${CODES.FUNCTION}4`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F5: KeyInterface = {
@@ -37,7 +39,7 @@ export const F5: KeyInterface = {
   hex: "0x74",
   code: `${CODES.FUNCTION}5`,
   key: `${CODES.FUNCTION}5`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F6: KeyInterface = {
@@ -45,7 +47,7 @@ export const F6: KeyInterface = {
   hex: "0x75",
   code: `${CODES.FUNCTION}6`,
   key: `${CODES.FUNCTION}6`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F7: KeyInterface = {
@@ -53,7 +55,7 @@ export const F7: KeyInterface = {
   hex: "0x76",
   code: `${CODES.FUNCTION}7`,
   key: `${CODES.FUNCTION}7`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F8: KeyInterface = {
@@ -61,7 +63,7 @@ export const F8: KeyInterface = {
   hex: "0x77",
   code: `${CODES.FUNCTION}8`,
   key: `${CODES.FUNCTION}8`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F9: KeyInterface = {
@@ -69,7 +71,7 @@ export const F9: KeyInterface = {
   hex: "0x78",
   code: `${CODES.FUNCTION}9`,
   key: `${CODES.FUNCTION}9`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F10: KeyInterface = {
@@ -77,7 +79,7 @@ export const F10: KeyInterface = {
   hex: "0x79",
   code: `${CODES.FUNCTION}10`,
   key: `${CODES.FUNCTION}10`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F11: KeyInterface = {
@@ -85,7 +87,7 @@ export const F11: KeyInterface = {
   hex: "0x7A",
   code: `${CODES.FUNCTION}11`,
   key: `${CODES.FUNCTION}11`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const F12: KeyInterface = {
@@ -93,5 +95,5 @@ export const F12: KeyInterface = {
   hex: "0x7B",
   code: `${CODES.FUNCTION}12`,
   key: `${CODES.FUNCTION}12`,
-  ...KeyDefaults,
+  ...KeyDefaults
 };

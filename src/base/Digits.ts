@@ -1,11 +1,13 @@
-import { KeyInterface, KeyDefaults, CODES } from "../../types";
+import {
+  KeyInterface, KeyDefaults, CODES 
+} from "../../types";
 
 export const ZERO: KeyInterface = {
   keyCode: 48,
   code: `${CODES.DIGIT}0`,
   key: "0",
   hex: "0x30",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const ONE: KeyInterface = {
@@ -13,7 +15,7 @@ export const ONE: KeyInterface = {
   code: `${CODES.DIGIT}1`,
   key: "1",
   hex: "0x31",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const TWO: KeyInterface = {
@@ -21,7 +23,7 @@ export const TWO: KeyInterface = {
   code: `${CODES.DIGIT}2`,
   key: "2",
   hex: "0x32",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const THREE: KeyInterface = {
@@ -29,7 +31,7 @@ export const THREE: KeyInterface = {
   code: `${CODES.DIGIT}3`,
   key: "3",
   hex: "0x33",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const FOUR: KeyInterface = {
@@ -37,7 +39,7 @@ export const FOUR: KeyInterface = {
   code: `${CODES.DIGIT}4`,
   key: "4",
   hex: "0x34",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const FIVE: KeyInterface = {
@@ -45,7 +47,7 @@ export const FIVE: KeyInterface = {
   code: `${CODES.DIGIT}5`,
   key: "5",
   hex: "0x35",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const SIX: KeyInterface = {
@@ -53,7 +55,7 @@ export const SIX: KeyInterface = {
   code: `${CODES.DIGIT}6`,
   key: "6",
   hex: "0x36",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const SEVEN: KeyInterface = {
@@ -61,7 +63,7 @@ export const SEVEN: KeyInterface = {
   code: `${CODES.DIGIT}7`,
   key: "7",
   hex: "0x37",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const EIGHT: KeyInterface = {
@@ -69,7 +71,7 @@ export const EIGHT: KeyInterface = {
   code: `${CODES.DIGIT}8`,
   key: "8",
   hex: "0x38",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const NINE: KeyInterface = {
@@ -77,5 +79,5 @@ export const NINE: KeyInterface = {
   code: `${CODES.DIGIT}9`,
   key: "9",
   hex: "0x39",
-  ...KeyDefaults,
+  ...KeyDefaults
 };

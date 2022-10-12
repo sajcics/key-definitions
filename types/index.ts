@@ -24,7 +24,7 @@ export const KeyDefaults = {
   isAltKey: false,
   isMetaKey: false,
   isShiftKey: false,
-  isCtrlKey: false,
+  isCtrlKey: false
 };
 
 export enum CODES {

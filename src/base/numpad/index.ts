@@ -1,2 +1,2 @@
-export *  from "./Generals";
-export *  from "./Digits";
+export * from "./Generals";
+export * from "./Digits";

@@ -12,7 +12,7 @@
     "tsc": "tsc",
     "build": "rollup --config rollup.config.ts",
     "build:prod": "NODE_ENV=production rollup --config rollup.config.ts ",
-    "eslint": "eslint"
+    "eslint": "eslint --ext .ts,.js --fix ."
   },
   "author": {
     "name": "sajcics",

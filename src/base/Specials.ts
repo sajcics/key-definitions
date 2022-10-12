@@ -1,11 +1,13 @@
-import { KeyInterface, KeyDefaults, CODES } from "../../types";
+import {
+  KeyInterface, KeyDefaults, CODES 
+} from "../../types";
 
 export const EXCLAMATION_MARK: KeyInterface = {
   keyCode: 49,
   code: `${CODES.DIGIT}1`,
   key: "!",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const QUOTATION_MARK: KeyInterface = {
@@ -13,7 +15,7 @@ export const QUOTATION_MARK: KeyInterface = {
   code: `${CODES.QUOTE}`,
   key: '"',
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const HASH: KeyInterface = {
@@ -21,7 +23,7 @@ export const HASH: KeyInterface = {
   code: `${CODES.DIGIT}3`,
   key: "#",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const DOLLAR_SIGN: KeyInterface = {
@@ -29,7 +31,7 @@ export const DOLLAR_SIGN: KeyInterface = {
   code: `${CODES.DIGIT}4`,
   key: "$",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const PERCENT: KeyInterface = {
@@ -37,7 +39,7 @@ export const PERCENT: KeyInterface = {
   code: `${CODES.DIGIT}5`,
   key: "%",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const AMPERSAND: KeyInterface = {
@@ -45,14 +47,14 @@ export const AMPERSAND: KeyInterface = {
   code: `${CODES.DIGIT}7`,
   key: "&",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const APOSTROPHE: KeyInterface = {
   keyCode: 222,
   code: `${CODES.QUOTE}`,
   key: "'",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const OPEN_PARENTHESIS: KeyInterface = {
@@ -60,7 +62,7 @@ export const OPEN_PARENTHESIS: KeyInterface = {
   code: `${CODES.DIGIT}9`,
   key: "(",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const CLOSE_PARENTHESIS: KeyInterface = {
@@ -68,7 +70,7 @@ export const CLOSE_PARENTHESIS: KeyInterface = {
   code: `${CODES.DIGIT}0`,
   key: ")",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const ASTERISK: KeyInterface = {
@@ -76,7 +78,7 @@ export const ASTERISK: KeyInterface = {
   code: `${CODES.DIGIT}8`,
   key: "*",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const PLUS: KeyInterface = {
@@ -91,21 +93,21 @@ export const COMMA: KeyInterface = {
   keyCode: 188,
   code: `${CODES.COMMA}`,
   key: ",",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const DASH: KeyInterface = {
   keyCode: 189,
   code: `${CODES.MINUS}`,
   key: "-",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const DOT: KeyInterface = {
   keyCode: 190,
   code: `${CODES.PERIOD}`,
   key: ".",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const SLASH: KeyInterface = {
@@ -134,14 +136,14 @@ export const LESS_THAN_BRACKET: KeyInterface = {
   keyCode: 220,
   code: `Intl${CODES.BACKSLASH}`,
   key: "<",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const EQUAL: KeyInterface = {
   keyCode: 187,
   code: `${CODES.EQUAL}`,
   key: "=",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const GREATER_THAN_BRACKET: KeyInterface = {
@@ -149,7 +151,7 @@ export const GREATER_THAN_BRACKET: KeyInterface = {
   code: `Intl${CODES.BACKSLASH}`,
   key: ">",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const QUESTION_MARK: KeyInterface = {
@@ -172,21 +174,21 @@ export const OPEN_BRACKET: KeyInterface = {
   keyCode: 219,
   code: `${CODES.BRACKET_LEFT}`,
   key: "[",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const BACKSLASH: KeyInterface = {
   keyCode: 220,
   code: `${CODES.BACKSLASH}`,
   key: "\\",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const CLOSE_BRACKET: KeyInterface = {
   keyCode: 221,
   code: `${CODES.BRACKET_RIGHT}`,
   key: "]",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const CARET: KeyInterface = {
@@ -194,7 +196,7 @@ export const CARET: KeyInterface = {
   code: `${CODES.DIGIT}6`,
   key: "^",
   ...KeyDefaults,
-  isShiftKey: true,
+  isShiftKey: true
 };
 
 export const UNDERSCORE: KeyInterface = {
@@ -209,7 +211,7 @@ export const BACKQUOTE: KeyInterface = {
   keyCode: 192,
   code: `${CODES.BACKQUOTE}`,
   key: "`",
-  ...KeyDefaults,
+  ...KeyDefaults
 };
 
 export const OPEN_BRACE: KeyInterface = {

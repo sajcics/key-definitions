@@ -5,7 +5,7 @@ import {
   F1,
   ALT_LEFT,
   ASTERISK,
-  Layout_CRO,
+  Layout_CRO
 } from "../src";
 import { Numpad } from "../src/layouts/us";
 import { CODES } from "../types";
