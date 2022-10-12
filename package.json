@@ -1,7 +1,7 @@
 {
   "name": "key-definitions",
-  "version": "0.0.1",
-  "description": "get a keyboard key definitions",
+  "version": "1.0.0",
+  "description": "get a keyboard key definition",
   "module": "dist/bundle.js",
   "types": "dist/src/bundle.d.ts",
   "files": [
@@ -21,7 +21,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
