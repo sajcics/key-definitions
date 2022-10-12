@@ -22,7 +22,7 @@ const config = [{
   }],
   plugins: [dts(), deleteDts({
     hook: "buildEnd",
-    targets: ["dist/src", "dist/types"]
+    targets: ["dist/src", "dist/types", "dist/helpers"]
   })]
 }];
 
