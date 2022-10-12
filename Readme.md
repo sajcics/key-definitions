@@ -55,6 +55,7 @@ interface KeyInterface {
 | Name        | Description                                         |
 | ----------- | --------------------------------------------------- |
 | isCharacter | Detect if pressed value is a character a-z and A-Z. |
+| compare     | compare two values                                  |
 
 ## isCharacter (x: KeyboardEvent)
 
@@ -66,7 +67,7 @@ onClick = (e: KeyboardEvent) => {
 };
 ```
 
-## isCharacter(x: string)
+## isCharacter(x: string) => boolean
 
 ```js
 isCharacter("A"); // true
@@ -88,6 +89,27 @@ isCharacter(64); // check 'a' value --> true
 isCharacter(90); // check 'Z' value --> true
 isCharacter(191); // check '?' value --> false
 isCharacter(49); // check '1' value --> false
+```
+
+## compare (x: KeyboardEvent, equalTo: string, caseSensitive?: boolean)
+
+Compare Event with a desirable string.
+
+```js
+// if we receive Event that 'z' key is pressed
+onClick = (e: KeyboardEvent) => {
+  compare(e, "Z", true); // false because we define that values are case sensitive z != Z
+  compare(e, "Z"); // true because case sensitive is set to false z === Z
+};
+```
+
+## compare (x: string, equalTo: string, caseSensitive?: boolean)
+
+Compare string with desirable string.
+
+```js
+compare("a", "A", true); // false because we define that values are case sensitive a != A
+compare("a", "A"); // true because case sensitive is set to false a === A
 ```
 
 # Supported table

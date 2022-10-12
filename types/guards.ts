@@ -9,7 +9,7 @@ type CHAR =
 
 /**
  * @param {KeyboardEvent|string} x value that we want to check if represent character [a-zA-Z]
- * @returns true if value is a character
+ * @returns {boolean} true if value is a character
  * @since 22 July 2022
  */
 function isCharacter(x: KeyboardEvent | string | number): x is CHAR {
