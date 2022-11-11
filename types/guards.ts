@@ -2,12 +2,19 @@ import {
   LowerCase, UpperCase 
 } from "../src/base/alpha";
 import * as Layout_CRO from "../src/layouts/cro/alpha";
+import * as Layout_DE from "../src/layouts/de/alpha";
+
+type CHAR_CRO = typeof Layout_CRO.LowerCase[keyof typeof Layout_CRO.LowerCase]["key"]
+| typeof Layout_CRO.UpperCase[keyof typeof Layout_CRO.UpperCase]["key"];
+
+type CHAR_DE = typeof Layout_DE.LowerCase[keyof typeof Layout_DE.LowerCase]["key"]
+| typeof Layout_DE.UpperCase[keyof typeof Layout_DE.UpperCase]["key"];
 
 type CHAR =
   | typeof LowerCase[keyof typeof LowerCase]["key"]
-  | typeof UpperCase[keyof typeof UpperCase]["key"]
-  | typeof Layout_CRO.LowerCase[keyof typeof Layout_CRO.LowerCase]["key"]
-  | typeof Layout_CRO.UpperCase[keyof typeof Layout_CRO.UpperCase]["key"];
+  | typeof UpperCase[keyof typeof UpperCase]["key"] 
+  | CHAR_CRO
+  | CHAR_DE
 
 /**
  * @param {KeyboardEvent|string} x value that we want to check if represent character [a-zA-Z]

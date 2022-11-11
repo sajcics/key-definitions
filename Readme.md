@@ -1,8 +1,13 @@
+[![npm version](https://badge.fury.io/js/key-definitions.svg)](https://badge.fury.io/js/key-definitions)
+![Known Vulnerabilities](https://snyk.io/test/github/sajcics/key-definitions/badge.svg)
+
 # About
 
 Key-definitions module is made by one purpose: to have key definitions in one place. Key definitions are followed by MDN documentation and as recommended a web developers should check `event.key` on `keyup` event to detect pressed key (not a `keydown` event nor `keyCode` property). The reason for this read more in [documentation](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key#case_1).
 
 Because there are numerous keyboard layouts this library is not 100% bulletproof.
+
+Defined layouts follow QWERTY keyboards.
 
 # Usage
 
@@ -10,7 +15,7 @@ Because there are numerous keyboard layouts this library is not 100% bulletproof
 
 ```js
 if (e.keyCode === 65) {
-  // this approach is deprecated but it's still in usage
+  // this approach is deprecated
 }
 
 // or
@@ -31,6 +36,23 @@ if (e.key === UpperCase.A.key) {
 if (e.key === ARROW_LEFT.key) {
   /// if event key is a ArrowLeft
 }
+
+//
+if (compare(e, ARROW_LEFT.key)) {
+  // check if event is arrow left
+}
+```
+
+# Install
+
+```cmd
+npm install key-definitions
+```
+
+or
+
+```cmd
+yarn add key-definitions
 ```
 
 # Interfaces
@@ -48,6 +70,7 @@ interface KeyInterface {
   isMetaKey?: boolean;
   isShiftKey?: boolean;
   isCtrlKey?: boolean;
+}
 ```
 
 # Functions
@@ -62,9 +85,11 @@ interface KeyInterface {
 Function will check `key`, `code` or `keyCode` values of KeyboardEvent.
 
 ```js
-onClick = (e: KeyboardEvent) => {
+const onKeyUp = (e: KeyboardEvent) => {
   isCharacter(e); // you can forward KeyboardEvent to detect if pressed key is a character
 };
+
+window.addEventListener("keyup", onKeyUp);
 ```
 
 ## isCharacter(x: string) => boolean
@@ -116,20 +141,23 @@ compare("a", "A"); // true because case sensitive is set to false a === A
 
 ## Language layouts
 
-| Language | Layout |
-| -------- | ------ |
-| English  | US     |
-| Croatian | CRO    |
+| Language | Layout | FileName   |
+| -------- | ------ | ---------- |
+| English  | US     | -          |
+| Croatian | CRO    | Layout_CRO |
+| German   | DE     | Layout_DE  |
 
 By default US layout is set, for different layout you need to import it independently.
 
 ```js
-import { LowerCase }, Layout_CRO from "key-definitions";
+import { LowerCase }, Layout_CRO, Layout_DE from "key-definitions";
 
 console.log(LowerCase.A.key); // --> returns US layout --> value 'a'
 console.log(Layout_CRO.LowerCase.A.key); // --> returns croatian layout --> value 'a'
 console.log(Layout_CRO.LowerCase.Č.key); // --> returns croatian layout --> value 'č'
 console.log(LowerCase.Č.key); // --> undefined (not supported for US layout)
+console.log(Layout_DE.LowerCase.Ü.key); // --> returns german layout ---> value 'ü'
+console.log(Layout_DE.LowerCase.UMLAUT_U.key); // --> returns german layout ---> value 'ü'
 ```
 
 ## Sections
@@ -140,14 +168,18 @@ console.log(LowerCase.Č.key); // --> undefined (not supported for US layout)
 
 Includes lower and upper case `a-zA-Z`.
 
-| Key | Layout |
-| --- | ------ |
-| A-Z | all    |
-| Č   | cro    |
-| Ć   | cro    |
-| Ž   | cro    |
-| Đ   | cro    |
-| Š   | cro    |
+| Key             | Layout |
+| --------------- | ------ |
+| A-Z             | all    |
+| Č               | cro    |
+| Ć               | cro    |
+| Ž               | cro    |
+| Đ               | cro    |
+| Š               | cro    |
+| Ü (or UMLAUT_U) | de     |
+| Ö (or UMLAUT_O) | de     |
+| Ä (or UMLAUT_A) | de     |
+| ẞ (or UMLAUT_S) | de     |
 
 ```js
 import { LowerCase, UpperCase } from "key-definitions";
@@ -319,8 +351,6 @@ console.log(DOLLAR_SIGN.key); // returns value '$'
 ```
 
 ### Other resources:
-
-https://blogs.longwin.com.tw/lifetype/key_codes.html
 
 https://keycode.info/for/!
 

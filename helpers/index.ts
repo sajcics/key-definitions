@@ -1,4 +1,5 @@
-/**
+/** compare values if they are the same.
+ * for KeyboardEvents it will be checked by `key` property
  * @param {KeyboardEvent|string} x value to check
  * @param {string} equalTo value to be equal to 
  * @param {boolean} caseSensitive case sensitive where a != A, if is set false then a === A is true 

@@ -38,12 +38,11 @@ const Š: KeyInterface = {
   ...KeyDefaults
 };
 
+export * from "../../../base/alpha/LowerCase";
 export {
   Č,
   Ć,
   Đ,
   Ž,
   Š
-};
-
-export * from "../../../base/alpha/LowerCase";
+} ;
