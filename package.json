@@ -41,7 +41,9 @@
     "usekeycode",
     "keycombo",
     "which",
-    "shortcut"
+    "shortcut",
+    "key definitions",
+    "keyDefinitions"
   ],
   "license": "MIT",
   "dependencies": {},
@@ -51,6 +53,7 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0",
+    "husky": "^8.0.2",
     "jest": "^27.5.1",
     "rollup": "^2.73.0",
     "rollup-plugin-delete": "^2.0.0",
