@@ -31,6 +31,7 @@ const Š: KeyInterface = {
   key: "Š" 
 };
 
+export * from "../../../base/alpha/UpperCase";
 export {
   Č,
   Ć,
@@ -38,5 +39,3 @@ export {
   Ž,
   Š
 };
-
-export * from "../../../base/alpha/UpperCase";
