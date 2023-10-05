@@ -1,20 +1,23 @@
+import { KeyInterface } from ".";
 import {
   LowerCase, UpperCase 
 } from "../src/base/alpha";
 import * as Layout_CRO from "../src/layouts/cro/alpha";
 import * as Layout_DE from "../src/layouts/de/alpha";
 
-type CHAR_CRO = typeof Layout_CRO.LowerCase[keyof typeof Layout_CRO.LowerCase]["key"]
-| typeof Layout_CRO.UpperCase[keyof typeof Layout_CRO.UpperCase]["key"];
+type CHAR_CRO =
+  | (typeof Layout_CRO.LowerCase)[keyof typeof Layout_CRO.LowerCase]["key"]
+  | (typeof Layout_CRO.UpperCase)[keyof typeof Layout_CRO.UpperCase]["key"];
 
-type CHAR_DE = typeof Layout_DE.LowerCase[keyof typeof Layout_DE.LowerCase]["key"]
-| typeof Layout_DE.UpperCase[keyof typeof Layout_DE.UpperCase]["key"];
+type CHAR_DE =
+  | (typeof Layout_DE.LowerCase)[keyof typeof Layout_DE.LowerCase]["key"]
+  | (typeof Layout_DE.UpperCase)[keyof typeof Layout_DE.UpperCase]["key"];
 
 type CHAR =
-  | typeof LowerCase[keyof typeof LowerCase]["key"]
-  | typeof UpperCase[keyof typeof UpperCase]["key"] 
+  | (typeof LowerCase)[keyof typeof LowerCase]["key"]
+  | (typeof UpperCase)[keyof typeof UpperCase]["key"]
   | CHAR_CRO
-  | CHAR_DE
+  | CHAR_DE;
 
 /**
  * @param {KeyboardEvent|string} x value that we want to check if represent character [a-zA-Z]
@@ -55,12 +58,33 @@ function isCharacter(x: KeyboardEvent | string | number): x is CHAR {
   }
 
   if (typeof x === "number") {
-    return !!characters.find(
-      (item) => item.keyCode === x
-    );
+    return !!characters.find((item) => item.keyCode === x);
   }
 
   return false;
 }
 
-export { isCharacter };
+/**
+ * check if given value an object that has same properties as KeyInterface
+ * @param x 
+ * @returns {boolean}
+ */
+function isKeyInterface(x: any): x is KeyInterface {
+  return x?.keyCode && x?.code && x?.key || (x?.isAltKey || x?.isMetaKey || x?.isShiftKey);
+}
+
+/**
+ * check if given value belongs to Keyboard Event
+ * @param x 
+ * @returns {boolean}
+ */
+function isKeyboardEvent(x: any): x is KeyboardEvent {  
+  const eventProperties = ["altKey", "ctrlKey", "code", "key", "location", "metaKey", "repeat", "shiftKey", "isComposing"];
+
+  return eventProperties.every(property => typeof x?.[property] !== "undefined");
+}
+
+
+export {
+  isCharacter, isKeyInterface, isKeyboardEvent
+};

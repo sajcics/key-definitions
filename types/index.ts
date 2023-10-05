@@ -1,6 +1,8 @@
 export interface KeyInterface {
+  /** @deprecated since 2.0.0 */
   keyCode: number | number[];
   keyCodeDefinitions?: KeyCodeSupportOS[];
+  /** @deprecated since 2.0.0 */
   code: string;
   key: string;
   isAltKey?: boolean;
