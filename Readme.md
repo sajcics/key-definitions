@@ -11,36 +11,67 @@ Defined layouts follow QWERTY keyboards.
 
 # Usage
 
-**before**
+**Before**
 
 ```js
-if (e.keyCode === 65) {
-  // this approach is deprecated
-}
+const onKeyUpHandler = (event) => {
+  if (event.keyCode === 65) {
+    // this approach is deprecated by MDN
+  }
 
-// or
+  if (event.key === "ArrowLeft") {
+    // check if pressed key is arrow left
+  }
 
-if (e.key === "ArrowLeft") {
-}
+  if (event.key === " ") {
+    // check if the key represents space
+  }
+
+  if (event.key === "A" || event.key === "B" || event.key === "C") {
+    // check if event key is one of the
+  }
+};
+
+useEffect(() => {
+  document.addEventListener("keyup", onKeyUpHandler);
+
+  return () => {
+    document.removeEventListener("keyup", onKeyUpHandler);
+  };
+}, []);
 ```
 
-**now**
+**Now**
+
+With new approach you can easily:
+
+- forward event instance to _compare_ function
+- read a code easily by not memorizing what ASCII number means
 
 ```js
-import { UpperCase, ARROW_LEFT } from "key-definitions";
+import { UpperCase, ARROW_LEFT, SPACE } from "key-definitions";
 
-if (e.key === UpperCase.A.key) {
-  // if event key is equal to "A"
-}
+const onKeyUpHandler = (event) => {
+  if (compare(event, ARROW_LEFT)) {
+    // you can check if given event represents space
+  }
 
-if (e.key === ARROW_LEFT.key) {
-  /// if event key is a ArrowLeft
-}
+  if (event.key === ARROW_LEFT.key) {
+    // you can check value by _key_ property
+  }
 
-//
-if (compare(e, ARROW_LEFT.key)) {
-  // check if event is arrow left
-}
+  if (compare(event, [UpperCase.A, UpperCase.B, UpperCase.C])) {
+    // check if any character is matching with event key
+  }
+};
+
+useEffect(() => {
+  document.addEventListener("keyup", onKeyUpHandler);
+
+  return () => {
+    document.removeEventListener("keyup", onKeyUpHandler);
+  };
+}, []);
 ```
 
 # Install
@@ -57,12 +88,12 @@ yarn add key-definitions
 
 # Interfaces
 
-Each key definition inherits `KeyInterface` that has following structure:
+Each key inherits `KeyInterface` that has following structure:
 
 ```js
 interface KeyInterface {
-  keyCode: number | number[]; // event.keyCode, it's array if there are numerous supports for different operation systems
-  keyCodeDefinitions?: KeyCodeSupportOS[]; // description of keyCode in case if exists multiple keyCode values
+  keyCode: number | number[]; // event.keyCode, it can be an array in case when numerous supports for different operation systems exists
+  keyCodeDefinitions?: KeyCodeSupportOS[]; // description of keyCode in case if multiple keyCode values exists
   hex?: hexNumber | hexNumber[]; // key's hex number, it's array if multiple keyCodeDefinitions exists
   code: string; // the same as event.code
   key: string; // the same as event.key
@@ -75,10 +106,34 @@ interface KeyInterface {
 
 # Functions
 
-| Name        | Description                                         |
-| ----------- | --------------------------------------------------- |
-| isCharacter | Detect if pressed value is a character a-z and A-Z. |
-| compare     | compare two values                                  |
+| Name        | Description                                                                                              | Return value |
+| ----------- | -------------------------------------------------------------------------------------------------------- | ------------ |
+| isCharacter | Detect if pressed value is a character a-z and A-Z.                                                      | boolean      |
+| compare     | compare two values; compares _key_ property and _code_ in case of SHIFT, ALT and CONTROL keyboard events | boolean      |
+
+## compare (value: KeyboardEvent, equalToValue: KeyInterface)
+
+Compare event with key definitions from library.
+
+```js
+import { SPACE } from "key-definitions";
+
+const onKeyUp = (e: KeyboardEvent) => {
+  compare(event, SPACE); // true
+};
+```
+
+## compare (value: KeyboardEvent, equalToValue: KeyInterface[])
+
+Compare does event is one of the several key definitions from library.
+
+```js
+import { SPACE, TAB } from "key-definitions";
+
+const onKeyUp = (e: KeyboardEvent) => {
+  compare(e.key, [SPACE, TAB]); // true
+};
+```
 
 ## isCharacter (x: KeyboardEvent)
 
@@ -89,7 +144,7 @@ const onKeyUp = (e: KeyboardEvent) => {
   isCharacter(e); // you can forward KeyboardEvent to detect if pressed key is a character
 };
 
-window.addEventListener("keyup", onKeyUp);
+document.addEventListener("keyup", onKeyUp);
 ```
 
 ## isCharacter(x: string) => boolean
@@ -114,27 +169,6 @@ isCharacter(64); // check 'a' value --> true
 isCharacter(90); // check 'Z' value --> true
 isCharacter(191); // check '?' value --> false
 isCharacter(49); // check '1' value --> false
-```
-
-## compare (x: KeyboardEvent, equalTo: string, caseSensitive?: boolean)
-
-Compare Event with a desirable string.
-
-```js
-// if we receive Event that 'z' key is pressed
-onClick = (e: KeyboardEvent) => {
-  compare(e, "Z", true); // false because we define that values are case sensitive z != Z
-  compare(e, "Z"); // true because case sensitive is set to false z === Z
-};
-```
-
-## compare (x: string, equalTo: string, caseSensitive?: boolean)
-
-Compare string with desirable string.
-
-```js
-compare("a", "A", true); // false because we define that values are case sensitive a != A
-compare("a", "A"); // true because case sensitive is set to false a === A
 ```
 
 # Supported table
