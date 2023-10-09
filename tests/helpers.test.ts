@@ -15,8 +15,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
       expect(compare(event as KeyboardEvent, LowerCase.A)).toBeTruthy();
     });
@@ -31,8 +30,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
       expect(compare(event as KeyboardEvent, LowerCase.A)).toBeFalsy();
     });
@@ -52,8 +50,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
       expect(compare(event as KeyboardEvent, QUESTION_MARK)).toBeTruthy();
     });
@@ -68,8 +65,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
       expect(compare(event as KeyboardEvent, SHIFT_LEFT)).toBeTruthy();
     });
@@ -84,8 +80,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
       expect(compare(event as KeyboardEvent, SHIFT_RIGHT)).toBeFalsy();
     });
@@ -100,8 +95,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
 
       expect(compare(event as KeyboardEvent, SPACE)).toBeTruthy();
@@ -119,8 +113,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
 
       expect(
@@ -138,8 +131,7 @@ describe("Test helper compare", () => {
         location: 1,
         metaKey: false,
         repeat: false,
-        shiftKey: false,
-        isComposing: false
+        shiftKey: false
       };
 
       expect(compare(event as KeyboardEvent, [SPACE, ALT_LEFT])).toBeFalsy();
