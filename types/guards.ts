@@ -66,25 +66,52 @@ function isCharacter(x: KeyboardEvent | string | number): x is CHAR {
 
 /**
  * check if given value an object that has same properties as KeyInterface
- * @param x 
+ * @param x
  * @returns {boolean}
  */
 function isKeyInterface(x: any): x is KeyInterface {
-  return x?.keyCode && x?.code && x?.key || (x?.isAltKey || x?.isMetaKey || x?.isShiftKey);
+  return (
+    (x?.keyCode && x?.code && x?.key) ||
+    x?.isAltKey ||
+    x?.isMetaKey ||
+    x?.isShiftKey
+  );
 }
 
 /**
  * check if given value belongs to Keyboard Event
- * @param x 
+ * @param x
  * @returns {boolean}
  */
-function isKeyboardEvent(x: any): x is KeyboardEvent {  
-  const eventProperties = ["altKey", "ctrlKey", "code", "key", "location", "metaKey", "repeat", "shiftKey", "isComposing"];
+function isKeyboardEvent(x: any): x is KeyboardEvent {
+  const eventProperties = [
+    "altKey",
+    "ctrlKey",
+    "code",
+    "key",
+    "location",
+    "metaKey",
+    "repeat",
+    "shiftKey"
+  ];
 
-  return eventProperties.every(property => typeof x?.[property] !== "undefined");
+  const eventAdditionalProperties = [
+    "isDefaultPrevented",
+    "isPropagationStopped",
+    "getModifierState"
+  ];
+
+  if (["dev", "test"].includes(process.env.NODE_ENV)) {
+    return eventProperties.every(
+      (property) => typeof x?.[property] !== "undefined"
+    );
+  }
+
+  return [...eventProperties, ...eventAdditionalProperties].every(
+    (property) => typeof x?.[property] !== "undefined"
+  );
 }
 
-
 export {
-  isCharacter, isKeyInterface, isKeyboardEvent
+  isCharacter, isKeyInterface, isKeyboardEvent 
 };
